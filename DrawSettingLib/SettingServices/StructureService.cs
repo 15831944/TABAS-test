@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace DrawSettingLib.SettingServices
 {
-    public class StructureService //Structure Service 수정 Git Hub Clone Test 중입니다.
+    public class StructureService 
     {
         public GeometryService geoService { get; set; }
 
