@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0E54A176-E260-4436-AD95-D3A4F5C10B10}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AssemblyLib</RootNamespace>
+    <AssemblyName>AssemblyLib</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyModels\AccessInputModel.cs" />
+    <Compile Include="AssemblyModels\AirFoamNozzleModel.cs" />
+    <Compile Include="AssemblyModels\AMEDataModel.cs" />
+    <Compile Include="AssemblyModels\AnchorageInputModel.cs" />
+    <Compile Include="AssemblyModels\AnchorBoltModel.cs" />
+    <Compile Include="AssemblyModels\AnchorChairModel.cs" />
+    <Compile Include="AssemblyModels\AngleSizeModel.cs" />
+    <Compile Include="AssemblyModels\AppurtenancesInputModel.cs" />
+    <Compile Include="AssemblyModels\AppurtModel.cs" />
+    <Compile Include="AssemblyModels\AssemblyModel.cs" />
+    <Compile Include="AssemblyModels\BottomInputModel.cs" />
+    <Compile Include="AssemblyModels\ChannelModel.cs" />
+    <Compile Include="AssemblyModels\DeckSupportEFRTDoubleInputModel.cs" />
+    <Compile Include="AssemblyModels\DeckSupportEFRTSingleInputModel.cs" />
+    <Compile Include="AssemblyModels\DeckSupportIFRTInputModel.cs" />
+    <Compile Include="AssemblyModels\DrainInternalModel.cs" />
+    <Compile Include="AssemblyModels\DrainLowerModel.cs" />
+    <Compile Include="AssemblyModels\DrainSumpModel.cs" />
+    <Compile Include="AssemblyModels\DrawingListCRTInputModel.cs" />
+    <Compile Include="AssemblyModels\DrawingListDRTInputModel.cs" />
+    <Compile Include="AssemblyModels\DrawingListEFRTInputModel.cs" />
+    <Compile Include="AssemblyModels\DrawingListIFRTInputModel.cs" />
+    <Compile Include="AssemblyModels\ElbowModel.cs" />
+    <Compile Include="AssemblyModels\FlangeEtcModel.cs" />
+    <Compile Include="AssemblyModels\FlangeOHFLWNModel.cs" />
+    <Compile Include="AssemblyModels\FlangeOHFModel.cs" />
+    <Compile Include="AssemblyModels\FlangeOHFSeriesAModel.cs" />
+    <Compile Include="AssemblyModels\FlangeOHFSeriesBModel.cs" />
+    <Compile Include="AssemblyModels\FlangeTHLWNModel.cs" />
+    <Compile Include="AssemblyModels\FlangeTHModel.cs" />
+    <Compile Include="AssemblyModels\FlangeTHSeriesAModel.cs" />
+    <Compile Include="AssemblyModels\FlangeTHSeriesBModel.cs" />
+    <Compile Include="AssemblyModels\GeneralCorrosionLoadingModel.cs" />
+    <Compile Include="AssemblyModels\GeneralDesignDataModel.cs" />
+    <Compile Include="AssemblyModels\GeneralLiquidCapacityWeightModel.cs" />
+    <Compile Include="AssemblyModels\GeneralMaterialSpecificationsModel.cs" />
+    <Compile Include="AssemblyModels\GeneralSeismicModel.cs" />
+    <Compile Include="AssemblyModels\GeneralWindModel.cs" />
+    <Compile Include="AssemblyModels\HBeamModel.cs" />
+    <Compile Include="AssemblyModels\InOutInternalPipe.cs" />
+    <Compile Include="AssemblyModels\InternalBendedTypeModel.cs" />
+    <Compile Include="AssemblyModels\LeaderListCRTInputModel.cs" />
+    <Compile Include="AssemblyModels\LeaderListDRTInputModel.cs" />
+    <Compile Include="AssemblyModels\LeaderListEFRTInputModel.cs" />
+    <Compile Include="AssemblyModels\LeaderListIFRTInputModel.cs" />
+    <Compile Include="AssemblyModels\ModelScaleModel.cs" />
+    <Compile Include="AssemblyModels\NCenteringInternalModel.cs" />
+    <Compile Include="AssemblyModels\NCenteringPlanModel.cs" />
+    <Compile Include="AssemblyModels\NCenteringRafterDetailModel.cs" />
+    <Compile Include="AssemblyModels\NColumnBaseSupportModel.cs" />
+    <Compile Include="AssemblyModels\NColumnCenterTopSupportModel.cs" />
+    <Compile Include="AssemblyModels\NColumnGirderModel.cs" />
+    <Compile Include="AssemblyModels\NColumnRafterModel.cs" />
+    <Compile Include="AssemblyModels\NColumnSideTopSupportModel.cs" />
+    <Compile Include="AssemblyModels\NDRTRafterJointClipModel.cs" />
+    <Compile Include="AssemblyModels\NotesCRTInputModel.cs" />
+    <Compile Include="AssemblyModels\NotesDRTInputModel.cs" />
+    <Compile Include="AssemblyModels\NotesEFRTInputModel.cs" />
+    <Compile Include="AssemblyModels\NotesIFRTInputModel.cs" />
+    <Compile Include="AssemblyModels\NozzleFRTRoofInputModel.cs" />
+    <Compile Include="AssemblyModels\NozzleRoofInputModel.cs" />
+    <Compile Include="AssemblyModels\NozzleShellInputModel.cs" />
+    <Compile Include="AssemblyModels\NRafterCenteringInternalModel.cs" />
+    <Compile Include="AssemblyModels\NRafterSupportClipCenterSideModel.cs" />
+    <Compile Include="AssemblyModels\NRafterSupportClipShellSideModel.cs" />
+    <Compile Include="AssemblyModels\NStructureBoltHoleSizeModel.cs" />
+    <Compile Include="AssemblyModels\NStructureBoltTypeModel.cs" />
+    <Compile Include="AssemblyModels\PipeModel.cs" />
+    <Compile Include="AssemblyModels\PipeScheduleModel.cs" />
+    <Compile Include="AssemblyModels\ReducerModel.cs" />
+    <Compile Include="AssemblyModels\ReinforcingPadModel.cs" />
+    <Compile Include="AssemblyModels\RimVentNozzleModel.cs" />
+    <Compile Include="AssemblyModels\RingEFRTDoubleInputModel.cs" />
+    <Compile Include="AssemblyModels\RoofCompressionRingModel.cs" />
+    <Compile Include="AssemblyModels\RoofCRTInputModel.cs" />
+    <Compile Include="AssemblyModels\RoofDRTInputModel.cs" />
+    <Compile Include="AssemblyModels\RoofEFRTDoubleDeckInputModel.cs" />
+    <Compile Include="AssemblyModels\RoofEFRTSingleDeckInputModel.cs" />
+    <Compile Include="AssemblyModels\RoofIFRTInputModel.cs" />
+    <Compile Include="AssemblyModels\RoofInsulationModel.cs" />
+    <Compile Include="AssemblyModels\RoofManholeModel.cs" />
+    <Compile Include="AssemblyModels\RoofProjectionReinfPadModel.cs" />
+    <Compile Include="AssemblyModels\ShellCleanOutModel.cs" />
+    <Compile Include="AssemblyModels\ShellInputModel.cs" />
+    <Compile Include="AssemblyModels\ShellManholeModel.cs" />
+    <Compile Include="AssemblyModels\ShellOutputModel.cs" />
+    <Compile Include="AssemblyModels\StructureCenteringModel.cs" />
+    <Compile Include="AssemblyModels\StructureCenteringRafterModel.cs" />
+    <Compile Include="AssemblyModels\StructureClipCenteringSideModel.cs" />
+    <Compile Include="AssemblyModels\StructureClipShellSideModel.cs" />
+    <Compile Include="AssemblyModels\StructureCRTCenteringInputModel.cs" />
+    <Compile Include="AssemblyModels\StructureCRTColumnBaseSupportModel.cs" />
+    <Compile Include="AssemblyModels\StructureCRTColumnCenterModel.cs" />
+    <Compile Include="AssemblyModels\StructureCRTColumnInputModel.cs" />
+    <Compile Include="AssemblyModels\StructureCRTColumnRafterModel.cs" />
+    <Compile Include="AssemblyModels\StructureCRTColumnSideModel.cs" />
+    <Compile Include="AssemblyModels\StructureCRTGirderInputModel.cs" />
+    <Compile Include="AssemblyModels\StructureCRTInputModel.cs" />
+    <Compile Include="AssemblyModels\StructureCRTRafterInputModel.cs" />
+    <Compile Include="AssemblyModels\StructureDRTCenteringInputModel.cs" />
+    <Compile Include="AssemblyModels\StructureDRTGirderInputModel.cs" />
+    <Compile Include="AssemblyModels\StructureDRTInputModel.cs" />
+    <Compile Include="AssemblyModels\StructureDRTRafterInputModel.cs" />
+    <Compile Include="AssemblyModels\StructureDRTRafterJointModel.cs" />
+    <Compile Include="AssemblyModels\StructureEFRTDoubleDeckDeckSupportInputModel.cs" />
+    <Compile Include="AssemblyModels\StructureEFRTDoubleDeckInputModel.cs" />
+    <Compile Include="AssemblyModels\StructureEFRTDoubleDeckStiffenerInputModel.cs" />
+    <Compile Include="AssemblyModels\StructureEFRTSingleDeckDeckSupportInputModel.cs" />
+    <Compile Include="AssemblyModels\StructureEFRTSingleDeckInputModel.cs" />
+    <Compile Include="AssemblyModels\StructureEFRTSingleDeckStiffenerInputModel.cs" />
+    <Compile Include="AssemblyModels\StructureIFRTDeckSupportInputModel.cs" />
+    <Compile Include="AssemblyModels\StructureIFRTInputModel.cs" />
+    <Compile Include="AssemblyModels\StructureIFRTStiffenerInputModel.cs" />
+    <Compile Include="AssemblyModels\TeeModel.cs" />
+    <Compile Include="AssemblyModels\ThreadedRoofModel.cs" />
+    <Compile Include="AssemblyModels\UBoltModel.cs" />
+    <Compile Include="AssemblyModels\VentModel.cs" />
+    <Compile Include="AssemblyModels\WaterSprayNozzleModel.cs" />
+    <Compile Include="AssemblyModels\WeldingInputModel.cs" />
+    <Compile Include="AssemblyModels\WindGirderInputModel.cs" />
+    <Compile Include="AssemblyModels\WindGirderOutputModel.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils\Notifier.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

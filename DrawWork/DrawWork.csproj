@@ -1,0 +1,314 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AB705C54-197D-4C70-A2A9-5525073F7240}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DrawWork</RootNamespace>
+    <AssemblyName>DrawWork</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="devDept.Eyeshot.Control.Wpf.v2021, Version=2021.3.487.0, Culture=neutral, PublicKeyToken=5385d83d2fb4d7d9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files\devDept Software\Eyeshot Ultimate 2021\Bin\devDept.Eyeshot.Control.Wpf.v2021.dll</HintPath>
+    </Reference>
+    <Reference Include="devDept.Eyeshot.Control.x64.Wpf.v2021">
+      <HintPath>..\..\..\..\..\..\Program Files\devDept Software\Eyeshot Ultimate 2021\Bin\x64\devDept.Eyeshot.Control.x64.Wpf.v2021.dll</HintPath>
+    </Reference>
+    <Reference Include="devDept.Geometry.v2021, Version=2021.3.487.0, Culture=neutral, PublicKeyToken=9440825e8b4733bc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files\devDept Software\Eyeshot Ultimate 2021\Bin\devDept.Geometry.v2021.dll</HintPath>
+    </Reference>
+    <Reference Include="devDept.Graphics.Shaders.v2021, Version=2021.3.487.0, Culture=neutral, PublicKeyToken=54ce5f5f803e4b42, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files\devDept Software\Eyeshot Ultimate 2021\Bin\devDept.Graphics.Shaders.v2021.dll</HintPath>
+    </Reference>
+    <Reference Include="devDept.Graphics.Wpf.v2021, Version=2021.3.487.0, Culture=neutral, PublicKeyToken=f3cd437f0d8061b5, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files\devDept Software\Eyeshot Ultimate 2021\Bin\devDept.Graphics.Wpf.v2021.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="AssemblyServices\AssemblyCommonDataService.cs" />
+    <Compile Include="AssemblyServices\AssemblyDataService.cs" />
+    <Compile Include="AssemblyServices\AssemblyModelService.cs" />
+    <Compile Include="AssemblyServices\FieldService.cs" />
+    <Compile Include="CommandModels\BasicCommandModel.cs" />
+    <Compile Include="CommandModels\CommandFunctionModel.cs" />
+    <Compile Include="CommandModels\CommandLineModel.cs" />
+    <Compile Include="CommandModels\CommandPropertiyModel.cs" />
+    <Compile Include="CommandServices\CommandBasicService.cs" />
+    <Compile Include="CommandServices\TranslateDataOutputService.cs" />
+    <Compile Include="CommandServices\TranslateDataModelService.cs" />
+    <Compile Include="CommandServices\TranslateDataService.cs" />
+    <Compile Include="Commons\CommonBase.cs" />
+    <Compile Include="Commons\CommonBaseDraw.cs" />
+    <Compile Include="Commons\CommonGlobal.cs" />
+    <Compile Include="Commons\CommonMethod.cs" />
+    <Compile Include="Commons\SingletonData.cs" />
+    <Compile Include="CutomModels\DimensionPointModel.cs" />
+    <Compile Include="CutomModels\LeaderPointModel.cs" />
+    <Compile Include="CutomModels\NozzleInputModel.cs" />
+    <Compile Include="DataServices\ExcelDataService.cs" />
+    <Compile Include="DesignServices\DesignService.cs" />
+    <Compile Include="DesignServices\IntergrationService.cs" />
+    <Compile Include="DrawAreaServices\AreaService.cs" />
+    <Compile Include="DrawAutomationServices\AutomationDimensionService.cs" />
+    <Compile Include="DrawAutomationServices\AutomationLeaderService.cs" />
+    <Compile Include="DrawBuilders\LogicBuilder.cs" />
+    <Compile Include="DrawCommonServices\DrawPublicService.cs" />
+    <Compile Include="DrawCustomObjectModels\CustomEntityModel.cs" />
+    <Compile Include="DrawCustomObjectModels\CustomLine.cs" />
+    <Compile Include="DrawCustomObjectModels\CustomRenderedHatch.cs" />
+    <Compile Include="DrawCustomObjectModels\CustomRenderedMesh.cs" />
+    <Compile Include="DrawCustomObjectModels\CustomRenderedTriangle.cs" />
+    <Compile Include="DrawDetailServices\DrawDetailPlateCuttingPlanService.cs" />
+    <Compile Include="DrawDetailServices\DrawDetailRoofBottomService.cs" />
+    <Compile Include="DrawDetailServices\DrawDetailService.cs" />
+    <Compile Include="DrawDetailServices\DrawDetailShellService.cs" />
+    <Compile Include="DrawDetailServices\DrawDetailStructureService.cs" />
+    <Compile Include="DrawDetailServices\DrawDetailStructureShareService.cs" />
+    <Compile Include="DrawDetailServices\DrawDetailTempService.cs" />
+    <Compile Include="DrawDetailServices\DrawDetailVisibleService.cs" />
+    <Compile Include="DrawGridServices\DrawPaperGridService.cs" />
+    <Compile Include="DrawGridServices\DrawPaperGridModel.cs" />
+    <Compile Include="DrawModels\DrawAssyModel.cs" />
+    <Compile Include="DrawModels\DrawBMExportModel.cs" />
+    <Compile Include="DrawModels\DrawBMLeaderModel.cs" />
+    <Compile Include="DrawModels\DrawBMModel.cs" />
+    <Compile Include="DrawModels\DrawBMNumberModel.cs" />
+    <Compile Include="DrawModels\DrawBoxCellModel.cs" />
+    <Compile Include="DrawModels\DrawCenterLineModel.cs" />
+    <Compile Include="DrawModels\DrawCuttingAreaModel.cs" />
+    <Compile Include="DrawModels\DrawDimensionArcModel.cs" />
+    <Compile Include="DrawModels\DrawDimensionModel.cs" />
+    <Compile Include="DrawModels\DrawDimensionsModel.cs" />
+    <Compile Include="DrawModels\DrawDimStyle.cs" />
+    <Compile Include="DrawModels\DrawEntityModel.cs" />
+    <Compile Include="DrawModels\DrawOnePlateModel.cs" />
+    <Compile Include="DrawModels\DrawPlateCuttingModel.cs" />
+    <Compile Include="DrawModels\DrawPlateCuttingSectorModel.cs" />
+    <Compile Include="DrawModels\DrawPlateModel.cs" />
+    <Compile Include="DrawModels\DrawPointModel.cs" />
+    <Compile Include="DrawModels\DrawPositionValueModel.cs" />
+    <Compile Include="DrawModels\DrawScaleModel.cs" />
+    <Compile Include="DrawModels\DrawShellDevModel.cs" />
+    <Compile Include="DrawModels\DrawSlopeLeaderModel.cs" />
+    <Compile Include="DrawModels\DrawWeldingModel.cs" />
+    <Compile Include="DrawModels\DrawWeldSymbolModel.cs" />
+    <Compile Include="DrawModels\PlateInfo.cs" />
+    <Compile Include="DrawPaperServices\PaperPreviewService.cs" />
+    <Compile Include="DrawPaperServices\ViewPortSettingModel.cs" />
+    <Compile Include="DrawSacleServices\DrawScaleService.cs" />
+    <Compile Include="DrawServices\DrawBMCalService.cs" />
+    <Compile Include="DrawServices\DrawBMService.cs" />
+    <Compile Include="DrawServices\DrawBoundaryService.cs" />
+    <Compile Include="DrawServices\DrawDimensionService.cs" />
+    <Compile Include="DrawServices\DrawFRTBlockService.cs" />
+    <Compile Include="DrawServices\DrawNozzleOrientationService.cs" />
+    <Compile Include="DrawServices\DrawShapeCalculationService.cs" />
+    <Compile Include="DrawServices\DrawShapeServices.cs" />
+    <Compile Include="DrawServices\DrawEditingService.cs" />
+    <Compile Include="DrawServices\DrawImportBlockService.cs" />
+    <Compile Include="DrawServices\DrawLeaderPublicService.cs" />
+    <Compile Include="DrawServices\DrawLeaderService.cs" />
+    <Compile Include="DrawServices\DrawLogicBlockService.cs" />
+    <Compile Include="DrawServices\DrawNozzleBlockService.cs" />
+    <Compile Include="DrawServices\DrawPipeService.cs" />
+    <Compile Include="DrawServices\DrawPublicFunctionService.cs" />
+    <Compile Include="DrawServices\DrawStructureService.cs" />
+    <Compile Include="DrawServices\DrawWeldingService.cs" />
+    <Compile Include="DrawServices\DrawWorkingPointService.cs" />
+    <Compile Include="DrawServices\DrawNozzleService.cs" />
+    <Compile Include="DrawServices\DrawObjectService.cs" />
+    <Compile Include="DrawServices\DrawReferenceBlockService.cs" />
+    <Compile Include="DrawServices\DrawSettingService.cs" />
+    <Compile Include="DrawShapes\DrawBreakSymbols.cs" />
+    <Compile Include="DrawShapes\DrawShellCourses.cs" />
+    <Compile Include="DrawShapes\DrawSlopeSymbols.cs" />
+    <Compile Include="DrawShapes\DrawWeldSymbols.cs" />
+    <Compile Include="DrawStyleServices\EnvironmentStyleService.cs" />
+    <Compile Include="DrawStyleServices\LayerStyleService.cs" />
+    <Compile Include="DrawStyleServices\LineStyleService.cs" />
+    <Compile Include="DrawStyleServices\StyleFunctionService.cs" />
+    <Compile Include="DrawStyleServices\TextStyleService.cs" />
+    <Compile Include="DrawWorkingPointSevices\CRTWorkingPointModel.cs" />
+    <Compile Include="DrawWorkingPointSevices\DRTWorkingPointModel.cs" />
+    <Compile Include="DWGFileServices\DWGFileService.cs" />
+    <Compile Include="FileServices\TextFileService.cs" />
+    <Compile Include="ImportServices\ImportBlockModel.cs" />
+    <Compile Include="ImportServices\ImportBlockService.cs" />
+    <Compile Include="Models\CustomBlockModel.cs" />
+    <Compile Include="Models\CustomEntityModel.cs" />
+    <Compile Include="Models\CustomLayerModel.cs" />
+    <Compile Include="Models\CustomLineModel.cs" />
+    <Compile Include="Models\CustomTextModel.cs" />
+    <Compile Include="Models\TreeNodeModel.cs" />
+    <Compile Include="Utils\Notifier.cs" />
+    <Compile Include="ValueServices\ValueService.cs" />
+    <Compile Include="ViewModels\AssemblyWindowViewModel.cs" />
+    <Compile Include="ViewModels\EnvironmentWindowViewModel.cs" />
+    <Compile Include="ViewModels\MainWindowViewModel.cs" />
+    <Compile Include="ViewModels\PreviewWindowViewModel.cs" />
+    <Compile Include="ViewModels\TitleBlockWindowViewModel.cs" />
+    <Compile Include="Windows\AssemblyWindow.xaml.cs">
+      <DependentUpon>AssemblyWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\EnvironmentWindow.xaml.cs">
+      <DependentUpon>EnvironmentWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\PreviewWindow.xaml.cs">
+      <DependentUpon>PreviewWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\TitleBlockWindow.xaml.cs">
+      <DependentUpon>TitleBlockWindow.xaml</DependentUpon>
+    </Compile>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DrawModels\CDPoint.cs" />
+    <Compile Include="DrawServices\DrawService.cs" />
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Windows\AssemblyWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\EnvironmentWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\PreviewWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\TitleBlockWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Resource Include="Resources\BLOCK_20210527.dwg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AssemblyLib\AssemblyLib.csproj">
+      <Project>{0e54a176-e260-4436-ad95-d3a4f5c10b10}</Project>
+      <Name>AssemblyLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DesignLib\DesignLib.csproj">
+      <Project>{1f7ff11e-e2d3-4c5c-b003-d7601ec118bc}</Project>
+      <Name>DesignLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DrawCalculationLib\DrawCalculationLib.csproj">
+      <Project>{cc03d061-5327-4417-941e-64338799beb8}</Project>
+      <Name>DrawCalculationLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DrawLogicLib\DrawLogicLib.csproj">
+      <Project>{f83adbdc-13a0-4154-bb37-4c355e5f5643}</Project>
+      <Name>DrawLogicLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DrawSettingLib\DrawSettingLib.csproj">
+      <Project>{09af4a28-824a-4ea4-b217-98a964d4b112}</Project>
+      <Name>DrawSettingLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DrawShapeLib\DrawShapeLib.csproj">
+      <Project>{ada325a6-7098-46a2-bab9-271d01333c70}</Project>
+      <Name>DrawShapeLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EPDataLib\EPDataLib.csproj">
+      <Project>{57C694EC-D561-4BE8-80E6-63FD2CB22EFB}</Project>
+      <Name>EPDataLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ExcelDataLib\ExcelDataLib.csproj">
+      <Project>{135b58cb-c30c-4500-84c4-0a67a68c7812}</Project>
+      <Name>ExcelDataLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StrengthCalLib\StrengthCalLib.csproj">
+      <Project>{38f33e73-a1a2-4455-b5a7-1c1366dcc9bf}</Project>
+      <Name>StrengthCalLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\samsungengtitleblock.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,333 @@
+// General
+using GeneralDD
+
+// Shell
+using ShellIn
+using ShellOut
+
+// Roof
+using RoofCRTIn
+
+// Bottom
+using BottomIn
+using BottomOut
+
+// Structure
+using StructureIn
+using columnSideOut
+using StructureGirderIn
+
+// GA Drawing Point : 도면의 좌측 하단 
+// GA는 영역 설정이 Tank의 좌측 하단
+// Reference Point 는 변경이 없을 것
+
+
+#region TankCenterLine
+drawassembly name ga
+refpoint xy 100000,100000
+#endregion
+
+#region TankCenterLine
+	point xy refpointx,refpointy
+	logicblock name centerline  xy @,@
+
+#endregion
+
+
+#region Tank Outline
+#	point xy refpointx,refpointy
+	
+#	line xy1 @,@ xy2 @,@cp[pointleftshelltopadj].y
+#	line xy1 @sizenominalid,@ xy2 @sizenominalid,@cp[pointleftshelltopadj].y
+#	line xy1 @sizenominalid/2,@ xy2 @sizenominalid/2,@cp[pointcentertop].y 
+#endregion
+
+#region Shell
+	point xy refpointx,refpointy
+	logicblock name shell xy @,@
+	logicblock name shellrightouter xy @,@
+#endregion
+
+#region TopAngle
+	point xy refpointx,refpointy
+	logicblock name topangle xy @,@
+	logicblock name topangle xy @,@ sp @,@ mirror right
+	logicblock name topanglerightouter xy @,@
+#endregion
+
+#region Roof
+	point xy refpointx,refpointy
+	logicblock name roof xy @,@
+#endregion
+
+#region Roof
+#	point xy refpointx,refpointy
+#	linedgree xy1 cp[pointleftroofdown].x,cp[pointleftroofdown].y xy2 @sizenominalid/2,@ degree roofslope direction x wp start
+#	line xy1 @,@ xy2 @,@roofplatethickness wp end rotater roofslope
+#	linedgree xy1 @,@ xy2 cp[pointcentertopdown].x,@ degree roofslope direction x
+	
+#	point xy refpointx,refpointy
+#	linedgree xy1 cp[pointleftroofdown].x,cp[pointleftroofdown].y xy2 @sizenominalid/2,@ degree roofslope direction x wp start mirror right
+#	line xy1 @,@ xy2 @,@roofplatethickness rotater roofslope mirror right wp end
+#	linedgree xy1 @,@ xy2 cp[pointcentertopdown].x,@ degree roofslope direction x 
+#endregion
+
+#region Bottom
+	point xy refpointx,refpointy
+	logicblock name bottom xy @,@
+#endregion
+
+#region InsulationRoof
+	point xy refpointx,refpointy
+	logicblock name insulationroof xy @,@
+#endregion
+
+#region InsulationShell
+	point xy refpointx,refpointy
+	logicblock name insulationshell xy @,@
+#endregion
+
+#region WindGirder
+	point xy refpointx,refpointy
+	logicblock name windgirder xy @,@
+	logicblock name windgirder xy @,@ mirror right
+	logicblock name windgirderrightouter xy @,@
+#endregion
+
+#region Structure
+	point xy refpointx,refpointy
+	logicblock name structure xy @,@
+#endregion
+
+#region Dimension
+	point xy refpointx,refpointy
+	
+	
+#region Anchorage
+	point xy refpointx,refpointy
+	logicblock name anchorange xy @,@
+#endregion	
+	
+
+#endregion
+
+#region AA : Nozzle
+	point xy refpointx,refpointy
+	nozzle  type bottom position shell nozzleposition left fontsize 160 leadercirclesize 800 multicolumn true
+#endregion
+
+
+
+
+#region ETCBlock
+	point xy refpointx,refpointy
+	importcustomblock  xy @,@
+
+#endregion
+
+#region ETCText
+	point xy refpointx,refpointy
+	logicblock name etctext  xy @,@
+
+#endregion
+
+#region CustomDimension
+	point xy refpointx,refpointy
+	customdimline  xy @,@
+
+#endregion
+
+
+#region ExtraDimension
+	point xy refpointx,refpointy
+	extradim  xy @,@
+
+#endregion
+
+#region Leader : Sample
+	point xy refpointx,refpointy
+	
+	leaderlist
+
+#endregion
+
+
+
+#region Nozzle : Orientation
+
+drawassembly name orientation
+refpoint xy 300000,300000
+
+orientation
+#endregion
+
+#region Nozzle : Orientation
+	nozzleorientation	
+#endregion
+
+
+#region Detail
+
+drawassembly name detail subname horizontaljoint
+refpoint xy 1000000,200000
+drawdetail name horizontaljoint
+
+
+drawassembly name detail subname onecourseshellplate
+refpoint xy 1100000,200000
+drawdetail name onecourseshellplate
+
+//drawassembly name detail subname roofarrange
+//refpoint xy 1300000,200000
+//drawdetail name roofarrange
+
+
+
+drawassembly name detail subname comring
+refpoint xy 1400000,200000
+drawdetail name comring
+drawassembly name detail subname topringcuttingplan
+refpoint xy 1400000,200000
+drawdetail name topringcuttingplan
+drawassembly name detail subname comringcuttingplan
+refpoint xy 1400000,200000
+drawdetail name comringcuttingplan
+
+
+
+
+drawassembly name detail subname anchorchair
+refpoint xy 1400000,200000
+drawdetail name anchorchair
+drawassembly name detail subname anchordetail
+refpoint xy 1400000,200000
+drawdetail name anchordetail
+
+
+
+drawassembly name detail subname topanglejoint
+refpoint xy 1400000,200000
+drawdetail name topanglejoint
+drawassembly name detail subname windgirderjoint
+refpoint xy 1400000,200000
+drawdetail name windgirderjoint
+
+
+
+
+drawassembly name detail subname sectiondd
+refpoint xy 1400000,200000
+drawdetail name sectiondd
+
+
+drawassembly name detail subname vertjointdetail
+refpoint xy 1400000,200000
+drawdetail name vertjointdetail
+
+
+drawassembly name detail subname shellplatearrangement
+refpoint xy 1400000,200000
+drawdetail name shellplatearrangement
+
+
+drawassembly name detail subname dimensionsforcutting
+refpoint xy 1400000,200000
+drawdetail name dimensionsforcutting
+drawassembly name detail subname tolerancelimit
+refpoint xy 1400000,200000
+drawdetail name tolerancelimit
+drawassembly name detail subname shellplatechordlength
+refpoint xy 1400000,200000
+drawdetail name shellplatechordlength
+
+
+drawassembly name detail subname nameplatebracket
+refpoint xy 1400000,200000
+drawdetail name nameplatebracket
+drawassembly name detail subname earthlug
+refpoint xy 1400000,200000
+drawdetail name earthlug
+drawassembly name detail subname settlementcheckpiece
+refpoint xy 1400000,200000
+drawdetail name settlementcheckpiece
+
+
+
+drawassembly name detail subname bottomplatearrangement
+refpoint xy 1400000,200000
+drawdetail name bottomplatearrangement
+
+
+
+drawassembly name detail subname bottomplatejointdetail
+refpoint xy 1400000,200000
+drawdetail name bottomplatejointdetail
+
+drawassembly name detail subname bottomplatejointannulardetail
+refpoint xy 1400000,200000
+drawdetail name bottomplatejointannulardetail
+
+
+
+drawassembly name detail subname bottomplateweldingdetailc
+refpoint xy 1400000,200000
+drawdetail name bottomplateweldingdetailc
+drawassembly name detail subname bottomplateweldingdetaild
+refpoint xy 1400000,200000
+drawdetail name bottomplateweldingdetaild
+drawassembly name detail subname bottomplateweldingdetailbb
+refpoint xy 1400000,200000
+drawdetail name bottomplateweldingdetailbb
+drawassembly name detail subname backingstripweldingdetail
+refpoint xy 1400000,200000
+drawdetail name backingstripweldingdetail
+drawassembly name detail subname bottomplateshelljointdetail
+refpoint xy 1400000,200000
+drawdetail name bottomplateshelljointdetail
+
+
+drawassembly name detail subname bottomplatecuttingplan
+refpoint xy 1400000,200000
+drawdetail name bottomplatecuttingplan
+drawassembly name detail subname annularplatecuttingplan
+refpoint xy 1400000,200000
+drawdetail name annularplatecuttingplan
+drawassembly name detail subname backingstrip
+refpoint xy 1400000,200000
+drawdetail name backingstrip
+
+
+
+
+drawassembly name detail subname roofplatearrangement
+refpoint xy 1400000,200000
+drawdetail name roofplatearrangement
+
+drawassembly name detail subname roofcompressionringjointdetail
+refpoint xy 1400000,200000
+drawdetail name roofcompressionringjointdetail
+
+drawassembly name detail subname roofplateweldingdetailc
+refpoint xy 1400000,200000
+drawdetail name roofplateweldingdetailc
+
+drawassembly name detail subname roofplateweldingdetaild
+refpoint xy 1400000,200000
+drawdetail name roofplateweldingdetaild
+
+drawassembly name detail subname roofplateweldingdetaildd
+refpoint xy 1400000,200000
+drawdetail name roofplateweldingdetaildd
+
+
+drawassembly name detail subname roofcompressionweldingdetail
+refpoint xy 1400000,200000
+drawdetail name roofcompressionweldingdetail
+drawassembly name detail subname roofplatecuttingplan
+refpoint xy 1400000,200000
+drawdetail name roofplatecuttingplan
+drawassembly name detail subname roofcompressionringcuttingplan
+refpoint xy 1400000,200000
+drawdetail name roofcompressionringcuttingplan
+
+#endregion

@@ -1,0 +1,23 @@
+// General
+using GeneralDD
+
+refpoint xy 300000,100000
+
+
+
+#region Nozzle : Orientation
+	point xy refpointx,refpointy
+	orientation
+#endregion
+
+#region Nozzle : Orientation
+	point xy refpointx,refpointy
+	nozzleorientation	
+#endregion
+
+#region Detail
+	drawassembly name detail subname bottomplatejoint
+	refpoint xy 1400000,200000
+	drawdetail name bottomplatejoint
+#endregion
+
