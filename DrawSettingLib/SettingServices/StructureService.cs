@@ -715,7 +715,7 @@ namespace DrawSettingLib.SettingServices
             strCRTCenteringData.newCenteringInternalInputList.AddRange(centeringInternalInputList);
             strCRTCenteringData.newRafterCenteringInternalInputList.AddRange(rafterCenteringInternalInputList);
 
-            strCRTCenteringData.newCenteringInput = centeringInput;
+            //strCRTCenteringData.newCenteringInput = centeringInput;
 
 
 
@@ -885,7 +885,7 @@ namespace DrawSettingLib.SettingServices
                     newRafter.OuterRealRadius = RoofOD + rafterHeightTopView + RoofThicknessTopView;
                     newRafter.InnerRealRadius = centeringOD / 2;
                     newRafter.InnerTopViewRadius = flangeOD / 2;
-                    newRafter.LengthTopView = newRafter.OuterRealRadius - newRafter.InnerTopViewRadius; ;
+                    newRafter.LengthTopView = newRafter.OuterRealRadius - newRafter.InnerTopViewRadius;
 
 
                     firstLayer.RafterList.Add(newRafter);
