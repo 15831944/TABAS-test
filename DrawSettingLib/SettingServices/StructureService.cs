@@ -724,6 +724,8 @@ namespace DrawSettingLib.SettingServices
 
             strCRTCenteringData.newRafterSupportClipCenterList.AddRange(rafterSupportClipCenterList);
 
+            strCRTCenteringData.newPurlinInput = purlinInput;
+
             StructureCRTCenteringInputModel centeringInputOne = strCRTCenteringData.newCenteringInputList[0];
             StructureCRTRafterInputModel rafterInputOne = strCRTCenteringData.newRafterInputList[0];
             NCenteringInternalModel centeringOne = strCRTCenteringData.newCenteringInternalInputList[0];
@@ -873,8 +875,8 @@ namespace DrawSettingLib.SettingServices
             else
             {
                 // Layer
-                firstLayer.Radius = RoofOD;
-                firstLayer.TopViewRadius = RoofOD + rafterHeightTopView;
+                firstLayer.Radius = RoofOD / 2;
+                firstLayer.TopViewRadius = RoofOD / 2 + rafterHeightTopView;
                 firstLayer.StartAngle = 0;
 
 
@@ -882,14 +884,20 @@ namespace DrawSettingLib.SettingServices
 
                 double roofHorizontalRadius = RoofOD / 2;
                 double centeringHeightSpace = GetDoubleValue(rafterCenteringOne.B1);
-                double Centeringt1 = 10;
+                double Centeringt1 = 10; // Centering t1
+                double CenteringA = 300; // 값 불러와야 함
 
 
                 double tempCenteringExtRafterLength = roofHorizontalRadius - (centeringOD / 2); //Roof HorizontalLength 값
                 double CenteringExtRafterLength0 = geoService.GetHypotenuseByWidth(RoofSlopeDegree, tempCenteringExtRafterLength); //Roof의 길이
-                double tempRafterAddLength1 = geoService.GetHypotenuseByWidth(RoofSlopeDegree, rafterHeight)
-                                              - geoService.GetOppositeByAdjacent(RoofSlopeDegree, centeringB + centeringExternalReduce)
-                                              - centeringHeightSpace; //
+                //double tempRafterAddLength1 = geoService.GetHypotenuseByWidth(RoofSlopeDegree, rafterHeight)
+                //                              - geoService.GetOppositeByAdjacent(RoofSlopeDegree, centeringB + centeringExternalReduce)
+                //                              - centeringHeightSpace; //
+
+                double tempRafterAddLength1 = CenteringA - Centeringt1 - centeringHeightSpace;
+
+
+
                 double RafterAddLength1 = geoService.GetOppositeByHypotenuse(RoofSlopeDegree, tempRafterAddLength1); //CenteringExtRafterLength0 에 더해주면 Rafter의 윗변 길이 나옴
 
                 double RafterAddLength2 = geoService.GetOppositeByAdjacent(RoofSlopeDegree, centeringHeightSpace + Centeringt1); //CenteringExtRafterLength0 에 더해주면 Rafter 아랫변 길이 나옴
@@ -898,7 +906,8 @@ namespace DrawSettingLib.SettingServices
                 double CenterRingExtRafterLength1 = CenteringExtRafterLength0 + RafterAddLength1;
                 double CenterRingExtRafterLength2 = CenteringExtRafterLength0 + RafterAddLength2;
 
-
+                //double UnderCutHeight = geoService.GetHypotenuseByWidth(RoofSlopeDegree, centeringHeightSpace + Centeringt1);
+                //double CenteringBetweenRafterHeight = tempRafterAddLength1-UnderCutHeight;
 
 
 
@@ -912,7 +921,7 @@ namespace DrawSettingLib.SettingServices
 
                     newRafter.Size = rafterInputOne.Size;
 
-                    newRafter.OuterRealRadius = RoofOD + rafterHeightTopView + RoofThicknessTopView;
+                    newRafter.OuterRealRadius = (RoofOD / 2) + rafterHeightTopView + RoofThicknessTopView;
 
                     newRafter.InnerRealRadius = centeringOD / 2;
                     newRafter.InnerTopViewRadius = flangeOD / 2 + centeringExternalReduce;
