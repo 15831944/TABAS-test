@@ -3235,7 +3235,7 @@ namespace DrawSettingLib.SettingServices
             Detail142.Page = 2;
 
             Detail142.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail142.SubName = PAPERSUB_TYPE.RafterSideClipDetail;
+            Detail142.SubName = PAPERSUB_TYPE.CenteringIntRafterSideClipDetail;
             Detail142.TitleName = "RAFTER SIDE CLIP DETAIL";
             Detail142.TitleSubName = "(SCALE : " + Detail142.ScaleValue + ")";
             Detail142.IsFix = true;
@@ -3262,7 +3262,7 @@ namespace DrawSettingLib.SettingServices
             Detail143.Page = 2;
 
             Detail143.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail143.SubName = PAPERSUB_TYPE.Rafter;
+            Detail143.SubName = PAPERSUB_TYPE.CenteringIntRafter;
             Detail143.TitleName = "RAFTER DETAIL";
             Detail143.TitleSubName = "(SCALE : " + Detail143.ScaleValue + ")";
             Detail143.IsFix = true;
@@ -3289,7 +3289,7 @@ namespace DrawSettingLib.SettingServices
             Detail144.Page = 2;
 
             Detail144.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail144.SubName = PAPERSUB_TYPE.CenterRingDetail;
+            Detail144.SubName = PAPERSUB_TYPE.CenteringIntCenterRingDetail;
             Detail144.TitleName = "CENTER RING DETAIL";
             Detail144.TitleSubName = "(SCALE : " + Detail144.ScaleValue + ")";
             Detail144.IsFix = true;
@@ -3317,7 +3317,7 @@ namespace DrawSettingLib.SettingServices
             Detail145.Page = 2;
 
             Detail145.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail145.SubName = PAPERSUB_TYPE.RafterCenterClipDetail;
+            Detail145.SubName = PAPERSUB_TYPE.CenteringIntRafterCenterClipDetail;
             Detail145.TitleName = "RAFTER CENTER CLIP DETAIL";
             Detail145.TitleSubName = "(SCALE : " + Detail145.ScaleValue + ")";
             Detail145.IsFix = true;
@@ -3344,7 +3344,7 @@ namespace DrawSettingLib.SettingServices
             Detail146.Page = 2;
 
             Detail146.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail146.SubName = PAPERSUB_TYPE.PurlinDetail;
+            Detail146.SubName = PAPERSUB_TYPE.CenteringIntPurlinDetail;
             Detail146.TitleName = "PULRIN DETAIL";
             Detail146.TitleSubName = "(SCALE : " + Detail146.ScaleValue + ")";
             Detail146.IsFix = false;
@@ -3369,7 +3369,7 @@ namespace DrawSettingLib.SettingServices
             Detail147.Page = 2;
 
             Detail147.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail147.SubName = PAPERSUB_TYPE.SectionAA;
+            Detail147.SubName = PAPERSUB_TYPE.CenteringIntPurlinSectionAA;
             Detail147.TitleName = "SECTION \"A\"-\"A\"";
             Detail147.TitleSubName = "";
             Detail147.IsFix = false;
@@ -3391,7 +3391,7 @@ namespace DrawSettingLib.SettingServices
             Detail148.Page = 2;
 
             Detail148.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail148.SubName = PAPERSUB_TYPE.RibPlateDetail;
+            Detail148.SubName = PAPERSUB_TYPE.CenteringIntRibPlateDetail;
             Detail148.TitleName = "RIB PLATE DETAIL";
             Detail148.TitleSubName = "";
             Detail148.IsFix = false;
@@ -3476,7 +3476,7 @@ namespace DrawSettingLib.SettingServices
             Detail152.Page = 2;
 
             Detail152.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail152.SubName = PAPERSUB_TYPE.CenterRingRafterDetail;
+            Detail152.SubName = PAPERSUB_TYPE.CenteringExtCenterRingRafterDetail;
             Detail152.TitleName = "CENTER RING & RAFTER DETAIL";
             Detail152.TitleSubName = "(SCALE : " + Detail152.ScaleValue + ")";
             Detail152.IsFix = true;
@@ -3503,7 +3503,7 @@ namespace DrawSettingLib.SettingServices
             Detail153.Page = 2;
 
             Detail153.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail153.SubName = PAPERSUB_TYPE.CenterRingDetail;
+            Detail153.SubName = PAPERSUB_TYPE.CenteringExtCenterRingDetail;
             Detail153.TitleName = "CENTER RING DETAIL";
             Detail153.TitleSubName = "(SCALE : " + Detail153.ScaleValue + ")";
             Detail153.IsFix = true;
@@ -3531,7 +3531,7 @@ namespace DrawSettingLib.SettingServices
             Detail154.Page = 2;
 
             Detail154.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail154.SubName = PAPERSUB_TYPE.DetailB;
+            Detail154.SubName = PAPERSUB_TYPE.CenteringExtDetailB;
             Detail154.TitleName = "DETAIL \"B\"";
             Detail154.TitleSubName = "";
             Detail154.IsFix = true;
@@ -3553,7 +3553,7 @@ namespace DrawSettingLib.SettingServices
             Detail155.Page = 2;
 
             Detail155.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail155.SubName = PAPERSUB_TYPE.SectionCC;
+            Detail155.SubName = PAPERSUB_TYPE.CenteringExtSectionCC;
             Detail155.TitleName = "SECTION \"C\"-\"C\"";
             Detail155.TitleSubName = "";
             Detail155.IsFix = true;
@@ -3575,7 +3575,7 @@ namespace DrawSettingLib.SettingServices
             Detail156.Page = 2;
 
             Detail156.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail156.SubName = PAPERSUB_TYPE.ViewC;
+            Detail156.SubName = PAPERSUB_TYPE.CenteringExtViewC;
             Detail156.TitleName = "VIEW \"C\"";
             Detail156.TitleSubName = "";
             Detail156.IsFix = true;
@@ -3598,7 +3598,7 @@ namespace DrawSettingLib.SettingServices
             Detail157.Page = 2;
 
             Detail157.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail157.SubName = PAPERSUB_TYPE.RafterAndReinfPadCrossDetail;
+            Detail157.SubName = PAPERSUB_TYPE.CenteringExtRafterAndReinfPadCrossDetail;
             Detail157.TitleName = "RAFTER AND REINF. PAD CROSS DETAil";
             Detail157.TitleSubName = "";
             Detail157.IsFix = false;
@@ -3674,7 +3674,7 @@ namespace DrawSettingLib.SettingServices
             Detail162.Page = 2;
 
             Detail162.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail162.SubName = PAPERSUB_TYPE.Rafter;
+            Detail162.SubName = PAPERSUB_TYPE.ColumnRafter;
             Detail162.TitleName = "RAFTER DETAIL";
             Detail162.TitleSubName = "(［200x80x7.35x11)"; //Rafter 정보 수정요함
             Detail162.IsFix = true;
@@ -3701,7 +3701,7 @@ namespace DrawSettingLib.SettingServices
             Detail163.Page = 2;
 
             Detail163.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail163.SubName = PAPERSUB_TYPE.RafterSideClipDetail;
+            Detail163.SubName = PAPERSUB_TYPE.ColumnRafterSideClipDetail;
             Detail163.TitleName = "RAFTER SIDE CLIP DETAIL";
             Detail163.TitleSubName = "(SCALE : " + Detail163.ScaleValue + ")";
             Detail163.IsFix = true;
@@ -3735,7 +3735,7 @@ namespace DrawSettingLib.SettingServices
             Detail170.Page = 3;
 
             Detail170.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail170.SubName = PAPERSUB_TYPE.SectionAA;
+            Detail170.SubName = PAPERSUB_TYPE.ColumnCenterTopViewAA;
             Detail170.TitleName = "VIEW\"A\"-\"A\"";
             Detail170.TitleSubName = "";
             Detail170.IsFix = true;
@@ -3759,13 +3759,16 @@ namespace DrawSettingLib.SettingServices
             Detail171.Page = 3;
 
             Detail171.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail171.SubName = PAPERSUB_TYPE.SectionBB;
+            Detail171.SubName = PAPERSUB_TYPE.ColumnCenterTopSectionBB; 
             Detail171.TitleName = "SECTION \"B\"=\"B\"";
             Detail171.TitleSubName = "";
             Detail171.IsFix = true;
             Detail171.Row = 1;
             Detail171.Column = 2;
+
             Detail171.ScaleValue = 0; // Auto Scale -> ViewAA 와 동일한 Scale 적용
+            Detail171.otherWidth = 65;
+            Detail171.otherHeight = 65;
 
             Detail171.ReferencePoint.X = 40000;
             Detail171.ReferencePoint.Y = -200000;
@@ -3809,7 +3812,7 @@ namespace DrawSettingLib.SettingServices
             Detail173.Page = 3;
 
             Detail173.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail173.SubName = PAPERSUB_TYPE.DetailG;
+            Detail173.SubName = PAPERSUB_TYPE.ColumnCenterTopDetailG;
             Detail173.TitleName = "DETAIL \"G\"";
             Detail173.TitleSubName = "";
             Detail173.IsFix = true;
@@ -3833,7 +3836,7 @@ namespace DrawSettingLib.SettingServices
             Detail174.Page = 3;
 
             Detail174.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail174.SubName = PAPERSUB_TYPE.SectionCC;
+            Detail174.SubName = PAPERSUB_TYPE.ColumnCenterBaseSectionCC;
             Detail174.TitleName = "SECTION \"C\"-\"C\"";
             Detail174.TitleSubName = "";
             Detail174.IsFix = true;
@@ -3858,7 +3861,7 @@ namespace DrawSettingLib.SettingServices
             Detail175.Page = 3;
 
             Detail175.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail175.SubName = PAPERSUB_TYPE.DrainDetail;
+            Detail175.SubName = PAPERSUB_TYPE.ColumnCenterBaseDrainDetail;
             Detail175.TitleName = "DRAIN DETAIL";
             Detail175.TitleSubName = "(SECTION \"H\")";
             Detail175.IsFix = true;
@@ -3880,7 +3883,7 @@ namespace DrawSettingLib.SettingServices
             Detail176.Page = 3;
 
             Detail176.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail176.SubName = PAPERSUB_TYPE.STRSectionDD;
+            Detail176.SubName = PAPERSUB_TYPE.ColumnCenterBaseSectionDD;
             Detail176.TitleName = "SECTION \"D\"-\"D\"";
             Detail176.TitleSubName = "(SCALE : 1/10)";
             Detail176.IsFix = true;
@@ -3903,7 +3906,7 @@ namespace DrawSettingLib.SettingServices
             Detail177.Page = 3;
 
             Detail177.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail177.SubName = PAPERSUB_TYPE.DetailF;
+            Detail177.SubName = PAPERSUB_TYPE.ColumnCenterBaseDetailF;
             Detail177.TitleName = "DETAIL \"F\"";
             Detail177.TitleSubName = "";
             Detail177.IsFix = true;
@@ -3926,7 +3929,7 @@ namespace DrawSettingLib.SettingServices
             Detail178.Page = 3;
 
             Detail178.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail178.SubName = PAPERSUB_TYPE.DetailE;
+            Detail178.SubName = PAPERSUB_TYPE.ColumnCenterBaseDetailE;
             Detail178.TitleName = "DETAIL \"E\"";
             Detail178.TitleSubName = "";
             Detail178.IsFix = true;
@@ -4007,7 +4010,7 @@ namespace DrawSettingLib.SettingServices
             Detail182.Page = 2;
 
             Detail182.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail182.SubName = PAPERSUB_TYPE.Girder;
+            Detail182.SubName = PAPERSUB_TYPE.ColumnGirder;
             Detail182.TitleName = "G1 " + "GIRDER"; //Girder 정보 입력 필요
             Detail182.TitleSubName = "(H300x300x10x15)"; //Girder 정보 불러와야 함
             Detail182.IsFix = true;
@@ -4033,7 +4036,7 @@ namespace DrawSettingLib.SettingServices
             Detail183.Page = 2;
 
             Detail183.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail183.SubName = PAPERSUB_TYPE.DetailA;
+            Detail183.SubName = PAPERSUB_TYPE.ColumnGirderDetailA;
             Detail183.TitleName = "DETAIL \"A\"";
             Detail183.TitleSubName = "(TYP.)";
             Detail183.IsFix = true;
@@ -4054,7 +4057,7 @@ namespace DrawSettingLib.SettingServices
             Detail184.Page = 2;
 
             Detail184.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail184.SubName = PAPERSUB_TYPE.Rafter;
+            Detail184.SubName = PAPERSUB_TYPE.ColumnRafter;
             Detail184.TitleName = "1st " + "RAFTER" + "R1~R3"; // 이름 수정 필요함
             Detail184.TitleSubName = "(［200x80x7.5x11),(SEE TABLE2)"; //Girder 정보 불러와야 함
             Detail184.IsFix = true;
@@ -4081,7 +4084,7 @@ namespace DrawSettingLib.SettingServices
             Detail185.Page = 2;
 
             Detail185.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail185.SubName = PAPERSUB_TYPE.Rafter;
+            Detail185.SubName = PAPERSUB_TYPE.ColumnRafter;
             Detail185.TitleName = "2nd " + "RAFTER" + "R1~R3"; // 이름 수정 필요함
             Detail185.TitleSubName = "(SEE TABLE2)"; //Girder 정보 불러와야 함
             Detail185.IsFix = true;
@@ -4109,7 +4112,7 @@ namespace DrawSettingLib.SettingServices
             Detail186.Page = 2;
 
             Detail186.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail186.SubName = PAPERSUB_TYPE.BracketDetail;
+            Detail186.SubName = PAPERSUB_TYPE.ColumnGirderBracketDetail;
             Detail186.TitleName = "BRACKET DETAIL";
             Detail186.TitleSubName = "(SCALE : 1/8),(SEE TABLE1)";
             Detail186.IsFix = true;
@@ -4131,7 +4134,7 @@ namespace DrawSettingLib.SettingServices
             Detail187.Page = 2;
 
             Detail187.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail187.SubName = PAPERSUB_TYPE.Table1; ;
+            Detail187.SubName = PAPERSUB_TYPE.ColumnGirderTable1; ;
             Detail187.TitleName = "TABLE1";
             Detail187.TitleSubName = "";
             Detail187.IsFix = true;
@@ -4152,7 +4155,7 @@ namespace DrawSettingLib.SettingServices
             Detail188.Page = 2;
 
             Detail188.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail188.SubName = PAPERSUB_TYPE.Table2; ;
+            Detail188.SubName = PAPERSUB_TYPE.ColumnRafterTable2; ;
             Detail188.TitleName = "TABLE2";
             Detail188.TitleSubName = "";
             Detail188.IsFix = true;
@@ -4174,7 +4177,7 @@ namespace DrawSettingLib.SettingServices
             Detail189.Page = 2;
 
             Detail189.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail189.SubName = PAPERSUB_TYPE.RafterSideClipDetail;
+            Detail189.SubName = PAPERSUB_TYPE.ColumnRafterRafterSideClipDetail;
             Detail189.TitleName = "RAFTER SIDE CLIP DETAIL";
             Detail189.TitleSubName = "(SCALE : " + Detail189.ScaleValue + ")";
             Detail189.IsFix = true;
@@ -4208,7 +4211,7 @@ namespace DrawSettingLib.SettingServices
             Detail190.Page = 3;
 
             Detail190.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail190.SubName = PAPERSUB_TYPE.SectionAA;
+            Detail190.SubName = PAPERSUB_TYPE.ColumnCenterTopViewAA;
             Detail190.TitleName = "VIEW\"A\"-\"A\"";
             Detail190.TitleSubName = "";
             Detail190.IsFix = true;
@@ -4232,13 +4235,15 @@ namespace DrawSettingLib.SettingServices
             Detail191.Page = 3;
 
             Detail191.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail191.SubName = PAPERSUB_TYPE.SectionBB;
+            Detail191.SubName = PAPERSUB_TYPE.ColumnCenterTopSectionBB; 
             Detail191.TitleName = "SECTION \"B\"=\"B\"";
             Detail191.TitleSubName = "";
             Detail191.IsFix = true;
             Detail191.Row = 1;
             Detail191.Column = 2;
             Detail191.ScaleValue = 0; // Auto Scale -> ViewAA 와 동일한 Scale 적용
+            Detail191.otherWidth = 65;
+            Detail191.otherHeight = 65;
 
             Detail191.ReferencePoint.X = 100000;
             Detail191.ReferencePoint.Y = -200000;
@@ -4282,7 +4287,7 @@ namespace DrawSettingLib.SettingServices
             Detail193.Page = 3;
 
             Detail193.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail193.SubName = PAPERSUB_TYPE.DetailG;
+            Detail193.SubName = PAPERSUB_TYPE.ColumnCenterTopDetailG;
             Detail193.TitleName = "DETAIL \"G\"";
             Detail193.TitleSubName = "";
             Detail193.IsFix = true;
@@ -4306,7 +4311,7 @@ namespace DrawSettingLib.SettingServices
             Detail194.Page = 3;
 
             Detail194.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail194.SubName = PAPERSUB_TYPE.SectionCC;
+            Detail194.SubName = PAPERSUB_TYPE.ColumnCenterBaseSectionCC;
             Detail194.TitleName = "SECTION \"C\"-\"C\"";
             Detail194.TitleSubName = "";
             Detail194.IsFix = true;
@@ -4331,7 +4336,7 @@ namespace DrawSettingLib.SettingServices
             Detail195.Page = 3;
 
             Detail195.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail195.SubName = PAPERSUB_TYPE.DrainDetail;
+            Detail195.SubName = PAPERSUB_TYPE.ColumnCenterBaseDrainDetail;
             Detail195.TitleName = "DRAIN DETAIL";
             Detail195.TitleSubName = "(SECTION \"H\")";
             Detail195.IsFix = true;
@@ -4353,7 +4358,7 @@ namespace DrawSettingLib.SettingServices
             Detail196.Page = 3;
 
             Detail196.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail196.SubName = PAPERSUB_TYPE.STRSectionDD;
+            Detail196.SubName = PAPERSUB_TYPE.ColumnCenterBaseSectionDD;
             Detail196.TitleName = "SECTION \"D\"-\"D\"";
             Detail196.TitleSubName = "(SCALE : 1/10)";
             Detail196.IsFix = true;
@@ -4376,7 +4381,7 @@ namespace DrawSettingLib.SettingServices
             Detail197.Page = 3;
 
             Detail197.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail197.SubName = PAPERSUB_TYPE.DetailF;
+            Detail197.SubName = PAPERSUB_TYPE.ColumnCenterBaseDetailF;
             Detail197.TitleName = "DETAIL \"F\"";
             Detail197.TitleSubName = "";
             Detail197.IsFix = true;
@@ -4399,7 +4404,7 @@ namespace DrawSettingLib.SettingServices
             Detail198.Page = 3;
 
             Detail198.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail198.SubName = PAPERSUB_TYPE.DetailE;
+            Detail198.SubName = PAPERSUB_TYPE.ColumnCenterBaseDetailE;
             Detail198.TitleName = "DETAIL \"E\"";
             Detail198.TitleSubName = "";
             Detail198.IsFix = true;
@@ -4427,7 +4432,7 @@ namespace DrawSettingLib.SettingServices
             Detail200.Page = 4;
 
             Detail200.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail200.SubName = PAPERSUB_TYPE.SectionAA;
+            Detail200.SubName = PAPERSUB_TYPE.ColumnSideTopSectionAA;
             Detail200.TitleName = "SECTION\"A\"-\"A\"";
             Detail200.TitleSubName = "";
             Detail200.IsFix = true;
@@ -4476,9 +4481,9 @@ namespace DrawSettingLib.SettingServices
             Detail202.Page = 4;
 
             Detail202.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail202.SubName = PAPERSUB_TYPE.GirderBracketDetail;
-            Detail202.TitleName = "GIRDER BLACKET DETAIL";
-            Detail202.TitleSubName = "(SCALE : 1/8), (SEE TABLE1)";
+            Detail202.SubName = PAPERSUB_TYPE.ColumnSideTopjViewAA;
+            Detail202.TitleName = "VIEW \"A\"-\"A\"";
+            Detail202.TitleSubName = "";
             Detail202.IsFix = true;
             Detail202.Row = 1;
             Detail202.Column = 2;
@@ -4497,7 +4502,7 @@ namespace DrawSettingLib.SettingServices
             Detail203.Page = 4;
 
             Detail203.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail203.SubName = PAPERSUB_TYPE.DrainDetail;
+            Detail203.SubName = PAPERSUB_TYPE.ColumnSideBaseDrainDetail;
             Detail203.TitleName = "DRAIN DETAIL";
             Detail203.TitleSubName = "(SECTION \"H\")";
             Detail203.IsFix = true;
@@ -4519,7 +4524,7 @@ namespace DrawSettingLib.SettingServices
             Detail204.Page = 4;
 
             Detail204.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail204.SubName = PAPERSUB_TYPE.SectionCC;
+            Detail204.SubName = PAPERSUB_TYPE.ColumnSideBaseSectionCC;
             Detail204.TitleName = "SECTION \"C\"-\"C\"";
             Detail204.TitleSubName = "";
             Detail204.IsFix = true;
@@ -4544,7 +4549,7 @@ namespace DrawSettingLib.SettingServices
             Detail205.Page = 4;
 
             Detail205.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail205.SubName = PAPERSUB_TYPE.DetailF;
+            Detail205.SubName = PAPERSUB_TYPE.ColumnSideBaseDetailF;
             Detail205.TitleName = "DETAIL \"F\"";
             Detail205.TitleSubName = "";
             Detail205.IsFix = true;
@@ -4567,7 +4572,7 @@ namespace DrawSettingLib.SettingServices
             Detail206.Page = 4;
 
             Detail206.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail206.SubName = PAPERSUB_TYPE.SectionEE;
+            Detail206.SubName = PAPERSUB_TYPE.ColumnSideBaseSectionDD;
             Detail206.TitleName = "SECTION \"D\"-\"D\"";
             Detail206.TitleSubName = "(SCALE : 1/10)";
             Detail206.IsFix = true;
@@ -4589,7 +4594,7 @@ namespace DrawSettingLib.SettingServices
             Detail207.Page = 4;
 
             Detail207.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail207.SubName = PAPERSUB_TYPE.DetailE;
+            Detail207.SubName = PAPERSUB_TYPE.ColumnSideBaseDetailE;
             Detail207.TitleName = "DETAIL \"E\"";
             Detail207.TitleSubName = "";
             Detail207.IsFix = true;
@@ -4672,7 +4677,7 @@ namespace DrawSettingLib.SettingServices
             Detail212.Page = 3;
 
             Detail212.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail212.SubName = PAPERSUB_TYPE.Girder;
+            Detail212.SubName = PAPERSUB_TYPE.ColumnGirder;
             Detail212.TitleName = "G1 " + "GIRDER"; // Girder 번호 적용 필요
             Detail212.TitleSubName = "(H300x300x10x15)"; //Girder 정보 불러와야 함
             Detail212.IsFix = false;
@@ -4699,7 +4704,7 @@ namespace DrawSettingLib.SettingServices
             Detail213.Page = 3;
 
             Detail213.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail213.SubName = PAPERSUB_TYPE.BracketDetail; ;
+            Detail213.SubName = PAPERSUB_TYPE.ColumnGirderBracketDetail; ;
             Detail213.TitleName = "BRACKET DETAIL";
             Detail213.TitleSubName = "(SCALE : 1/8), (SEE TABLE1)";
             Detail213.IsFix = true;
@@ -4721,7 +4726,7 @@ namespace DrawSettingLib.SettingServices
             Detail214.Page = 3;
 
             Detail214.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail214.SubName = PAPERSUB_TYPE.Table1; ;
+            Detail214.SubName = PAPERSUB_TYPE.ColumnGirderTable1; ;
             Detail214.TitleName = "TABLE1";
             Detail214.TitleSubName = "";
             Detail214.IsFix = true;
@@ -4743,7 +4748,7 @@ namespace DrawSettingLib.SettingServices
             Detail215.Page = 3;
 
             Detail215.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail215.SubName = PAPERSUB_TYPE.DetailA;
+            Detail215.SubName = PAPERSUB_TYPE.ColumnGirderDetailA;
             Detail215.TitleName = "DETAIL \"A\"";
             Detail215.TitleSubName = "(TYP.)";
             Detail215.IsFix = false;
@@ -4765,7 +4770,7 @@ namespace DrawSettingLib.SettingServices
             Detail216.Page = 4;
 
             Detail216.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail216.SubName = PAPERSUB_TYPE.Rafter;
+            Detail216.SubName = PAPERSUB_TYPE.ColumnRafter;
             Detail216.TitleName = "1st " + "RAFTER" + "R1~R3"; //Rafter 번호 표기 요함
             Detail216.TitleSubName = "(［200x80x7.35x11)"; //Rafter 정보 수정요함
             Detail216.IsFix = false;
@@ -4791,7 +4796,7 @@ namespace DrawSettingLib.SettingServices
             Detail217.Page = 4;
 
             Detail217.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail217.SubName = PAPERSUB_TYPE.RafterSideClipDetail;
+            Detail217.SubName = PAPERSUB_TYPE.ColumnRafterSideClipDetail;
             Detail217.TitleName = "RAFTER SIDE CLIP DETAIL";
             Detail217.TitleSubName = "(SCALE : " + Detail217.ScaleValue + ")";
             Detail217.IsFix = false;
@@ -4819,7 +4824,7 @@ namespace DrawSettingLib.SettingServices
             Detail218.Page = 4;
 
             Detail218.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail218.SubName = PAPERSUB_TYPE.Table2; ;
+            Detail218.SubName = PAPERSUB_TYPE.ColumnRafterTable2; ;
             Detail218.TitleName = "TABLE2";
             Detail218.TitleSubName = "";
             Detail218.IsFix = false;
@@ -4841,7 +4846,7 @@ namespace DrawSettingLib.SettingServices
             Detail220.Page = 5;
 
             Detail220.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail220.SubName = PAPERSUB_TYPE.SectionAA;
+            Detail220.SubName = PAPERSUB_TYPE.ColumnCenterTopViewAA;
             Detail220.TitleName = "VIEW\"A\"-\"A\"";
             Detail220.TitleSubName = "";
             Detail220.IsFix = true;
@@ -4865,13 +4870,15 @@ namespace DrawSettingLib.SettingServices
             Detail221.Page = 5;
 
             Detail221.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail221.SubName = PAPERSUB_TYPE.SectionBB;
+            Detail221.SubName = PAPERSUB_TYPE.ColumnCenterTopSectionBB;
             Detail221.TitleName = "SECTION \"B\"=\"B\"";
             Detail221.TitleSubName = "";
             Detail221.IsFix = true;
             Detail221.Row = 1;
             Detail221.Column = 2;
             Detail221.ScaleValue = 0; // Auto Scale -> ViewAA 와 동일한 Scale 적용
+            Detail221.otherWidth = 65;
+            Detail221.otherHeight = 65;
 
             Detail221.ReferencePoint.X = 100000;
             Detail221.ReferencePoint.Y = -200000;
@@ -4915,7 +4922,7 @@ namespace DrawSettingLib.SettingServices
             Detail223.Page = 5;
 
             Detail223.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail223.SubName = PAPERSUB_TYPE.DetailG;
+            Detail223.SubName = PAPERSUB_TYPE.ColumnCenterTopDetailG;
             Detail223.TitleName = "DETAIL \"G\"";
             Detail223.TitleSubName = "";
             Detail223.IsFix = true;
@@ -4939,7 +4946,7 @@ namespace DrawSettingLib.SettingServices
             Detail224.Page = 5;
 
             Detail224.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail224.SubName = PAPERSUB_TYPE.SectionCC;
+            Detail224.SubName = PAPERSUB_TYPE.ColumnCenterBaseSectionCC;
             Detail224.TitleName = "SECTION \"C\"-\"C\"";
             Detail224.TitleSubName = "";
             Detail224.IsFix = true;
@@ -4964,7 +4971,7 @@ namespace DrawSettingLib.SettingServices
             Detail225.Page = 5;
 
             Detail225.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail225.SubName = PAPERSUB_TYPE.DrainDetail;
+            Detail225.SubName = PAPERSUB_TYPE.ColumnCenterBaseDrainDetail;
             Detail225.TitleName = "DRAIN DETAIL";
             Detail225.TitleSubName = "(SECTION \"H\")";
             Detail225.IsFix = true;
@@ -4986,7 +4993,7 @@ namespace DrawSettingLib.SettingServices
             Detail226.Page = 5;
 
             Detail226.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail226.SubName = PAPERSUB_TYPE.STRSectionDD;
+            Detail226.SubName = PAPERSUB_TYPE.ColumnCenterBaseSectionDD;
             Detail226.TitleName = "SECTION \"D\"-\"D\"";
             Detail226.TitleSubName = "(SCALE : 1/10)";
             Detail226.IsFix = true;
@@ -5009,7 +5016,7 @@ namespace DrawSettingLib.SettingServices
             Detail227.Page = 5;
 
             Detail227.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail227.SubName = PAPERSUB_TYPE.DetailF;
+            Detail227.SubName = PAPERSUB_TYPE.ColumnCenterBaseDetailF;
             Detail227.TitleName = "DETAIL \"F\"";
             Detail227.TitleSubName = "";
             Detail227.IsFix = true;
@@ -5032,7 +5039,7 @@ namespace DrawSettingLib.SettingServices
             Detail228.Page = 5;
 
             Detail228.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail228.SubName = PAPERSUB_TYPE.DetailE;
+            Detail228.SubName = PAPERSUB_TYPE.ColumnCenterBaseDetailE;
             Detail228.TitleName = "DETAIL \"E\"";
             Detail228.TitleSubName = "";
             Detail228.IsFix = true;
@@ -5057,7 +5064,7 @@ namespace DrawSettingLib.SettingServices
             Detail230.Page = 6;
 
             Detail230.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail230.SubName = PAPERSUB_TYPE.SectionAA;
+            Detail230.SubName = PAPERSUB_TYPE.ColumnSideTopSectionAA;
             Detail230.TitleName = "SECTION\"A\"-\"A\"";
             Detail230.TitleSubName = "";
             Detail230.IsFix = true;
@@ -5106,9 +5113,9 @@ namespace DrawSettingLib.SettingServices
             Detail232.Page = 6;
 
             Detail232.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail232.SubName = PAPERSUB_TYPE.GirderBracketDetail;
-            Detail232.TitleName = "GIRDER BLACKET DETAIL";
-            Detail232.TitleSubName = "(SCALE : 1/8), (SEE TABLE1)";
+            Detail232.SubName = PAPERSUB_TYPE.ColumnSideTopjViewAA;
+            Detail232.TitleName = "VIEW \"A\"-\"A\"";
+            Detail232.TitleSubName = "";
             Detail232.IsFix = true;
             Detail232.Row = 1;
             Detail232.Column = 2;
@@ -5127,7 +5134,7 @@ namespace DrawSettingLib.SettingServices
             Detail233.Page = 6;
 
             Detail233.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail233.SubName = PAPERSUB_TYPE.DrainDetail;
+            Detail233.SubName = PAPERSUB_TYPE.ColumnSideBaseDrainDetail;
             Detail233.TitleName = "DRAIN DETAIL";
             Detail233.TitleSubName = "(SECTION \"H\")";
             Detail233.IsFix = true;
@@ -5149,7 +5156,7 @@ namespace DrawSettingLib.SettingServices
             Detail234.Page = 6;
 
             Detail234.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail234.SubName = PAPERSUB_TYPE.SectionCC;
+            Detail234.SubName = PAPERSUB_TYPE.ColumnSideBaseSectionCC;
             Detail234.TitleName = "SECTION \"C\"-\"C\"";
             Detail234.TitleSubName = "";
             Detail234.IsFix = true;
@@ -5174,7 +5181,7 @@ namespace DrawSettingLib.SettingServices
             Detail235.Page = 6;
 
             Detail235.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail235.SubName = PAPERSUB_TYPE.DetailF;
+            Detail235.SubName = PAPERSUB_TYPE.ColumnSideBaseDetailF;
             Detail235.TitleName = "DETAIL \"F\"";
             Detail235.TitleSubName = "";
             Detail235.IsFix = true;
@@ -5197,7 +5204,7 @@ namespace DrawSettingLib.SettingServices
             Detail236.Page = 6;
 
             Detail236.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail236.SubName = PAPERSUB_TYPE.SectionEE;
+            Detail236.SubName = PAPERSUB_TYPE.ColumnSideBaseSectionDD;
             Detail236.TitleName = "SECTION \"D\"-\"D\"";
             Detail236.TitleSubName = "(SCALE : 1/10)";
             Detail236.IsFix = true;
@@ -5219,7 +5226,7 @@ namespace DrawSettingLib.SettingServices
             Detail237.Page = 6;
 
             Detail237.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail237.SubName = PAPERSUB_TYPE.DetailE;
+            Detail237.SubName = PAPERSUB_TYPE.ColumnSideBaseDetailE;
             Detail237.TitleName = "DETAIL \"E\"";
             Detail237.TitleSubName = "";
             Detail237.IsFix = true;
@@ -5243,7 +5250,7 @@ namespace DrawSettingLib.SettingServices
             Detail240.Page = 7;
 
             Detail240.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail240.SubName = PAPERSUB_TYPE.SectionAA;
+            Detail240.SubName = PAPERSUB_TYPE.ColumnSideTopSectionAA;
             Detail240.TitleName = "SECTION\"A\"-\"A\"";
             Detail240.TitleSubName = "";
             Detail240.IsFix = true;
@@ -5266,8 +5273,8 @@ namespace DrawSettingLib.SettingServices
             Detail241.Page = 7;
 
             Detail241.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail241.SubName = PAPERSUB_TYPE.C2SideColumnDetail;
-            Detail241.TitleName = "C2 SIDE COLUMN DETAIL"; //C1~C6 적용 가능??
+            Detail241.SubName = PAPERSUB_TYPE.C3SideColumnDetail;
+            Detail241.TitleName = "C3 SIDE COLUMN DETAIL"; //C1~C6 적용 가능??
             Detail241.TitleSubName = "";
             Detail241.IsFix = true;
             Detail241.Row = 2;
@@ -5292,9 +5299,9 @@ namespace DrawSettingLib.SettingServices
             Detail242.Page = 7;
 
             Detail242.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail242.SubName = PAPERSUB_TYPE.GirderBracketDetail;
-            Detail242.TitleName = "GIRDER BLACKET DETAIL";
-            Detail242.TitleSubName = "(SCALE : 1/8), (SEE TABLE1)";
+            Detail242.SubName = PAPERSUB_TYPE.ColumnSideTopjViewAA;
+            Detail242.TitleName = "VIEW \"A\"-\"A\"";
+            Detail242.TitleSubName = "";
             Detail242.IsFix = true;
             Detail242.Row = 1;
             Detail242.Column = 2;
@@ -5313,7 +5320,7 @@ namespace DrawSettingLib.SettingServices
             Detail243.Page = 7;
 
             Detail243.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail243.SubName = PAPERSUB_TYPE.DrainDetail;
+            Detail243.SubName = PAPERSUB_TYPE.ColumnSideBaseDrainDetail;
             Detail243.TitleName = "DRAIN DETAIL";
             Detail243.TitleSubName = "(SECTION \"H\")";
             Detail243.IsFix = true;
@@ -5335,7 +5342,7 @@ namespace DrawSettingLib.SettingServices
             Detail244.Page = 7;
 
             Detail244.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail244.SubName = PAPERSUB_TYPE.SectionCC;
+            Detail244.SubName = PAPERSUB_TYPE.ColumnSideBaseSectionCC;
             Detail244.TitleName = "SECTION \"C\"-\"C\"";
             Detail244.TitleSubName = "";
             Detail244.IsFix = true;
@@ -5360,7 +5367,7 @@ namespace DrawSettingLib.SettingServices
             Detail245.Page = 7;
 
             Detail245.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail245.SubName = PAPERSUB_TYPE.DetailF;
+            Detail245.SubName = PAPERSUB_TYPE.ColumnSideBaseDetailF;
             Detail245.TitleName = "DETAIL \"F\"";
             Detail245.TitleSubName = "";
             Detail245.IsFix = true;
@@ -5382,7 +5389,7 @@ namespace DrawSettingLib.SettingServices
             Detail246.Page = 7;
 
             Detail246.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail246.SubName = PAPERSUB_TYPE.SectionEE;
+            Detail246.SubName = PAPERSUB_TYPE.ColumnSideBaseSectionDD;
             Detail246.TitleName = "SECTION \"D\"-\"D\"";
             Detail246.TitleSubName = "(SCALE : 1/10)";
             Detail246.IsFix = true;
@@ -5404,7 +5411,7 @@ namespace DrawSettingLib.SettingServices
             Detail247.Page = 7;
 
             Detail247.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail247.SubName = PAPERSUB_TYPE.DetailE;
+            Detail247.SubName = PAPERSUB_TYPE.ColumnSideBaseDetailE;
             Detail247.TitleName = "DETAIL \"E\"";
             Detail247.TitleSubName = "";
             Detail247.IsFix = true;
@@ -5482,7 +5489,7 @@ namespace DrawSettingLib.SettingServices
             Detail252.Page = 3;
 
             Detail252.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail252.SubName = PAPERSUB_TYPE.Girder;
+            Detail252.SubName = PAPERSUB_TYPE.ColumnGirder;
             Detail252.TitleName = "GIRDER"; // Girder 번호 적용 필요
             Detail252.TitleSubName = "(H300x300x10x15)"; //Girder 정보 불러와야 함
             Detail252.IsFix = false;
@@ -5535,9 +5542,9 @@ namespace DrawSettingLib.SettingServices
             Detail254.Page = 3;
 
             Detail254.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail254.SubName = PAPERSUB_TYPE.BracketDetail; ;
+            Detail254.SubName = PAPERSUB_TYPE.ColumnGirderBracketDetail;
             Detail254.TitleName = "BRACKET DETAIL";
-            Detail254.TitleSubName = "(SCALE : 1/8), (SEE TABLE1)";
+            Detail254.TitleSubName = "(SEE TABLE1)";
             Detail254.IsFix = true;
             Detail254.Row = 1;
             Detail254.Column = 4;
@@ -5557,7 +5564,7 @@ namespace DrawSettingLib.SettingServices
             Detail255.Page = 3;
 
             Detail255.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail255.SubName = PAPERSUB_TYPE.Table1; ;
+            Detail255.SubName = PAPERSUB_TYPE.ColumnGirderTable1; ;
             Detail255.TitleName = "TABLE1";
             Detail255.TitleSubName = "";
             Detail255.IsFix = true;
@@ -5579,7 +5586,7 @@ namespace DrawSettingLib.SettingServices
             Detail256.Page = 3;
 
             Detail256.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail256.SubName = PAPERSUB_TYPE.DetailA;
+            Detail256.SubName = PAPERSUB_TYPE.ColumnGirderDetailA;
             Detail256.TitleName = "DETAIL \"A\"";
             Detail256.TitleSubName = "(TYP.)";
             Detail256.IsFix = false;
@@ -5600,7 +5607,7 @@ namespace DrawSettingLib.SettingServices
             Detail257.Page = 4;
 
             Detail257.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail257.SubName = PAPERSUB_TYPE.Girder;
+            Detail257.SubName = PAPERSUB_TYPE.ColumnGirder;
             Detail257.TitleName = "GIRDER"; // Girder 번호 적용 필요
             Detail257.TitleSubName = "(H300x300x10x15)"; //Girder 정보 불러와야 함
             Detail257.IsFix = false;
@@ -5626,7 +5633,7 @@ namespace DrawSettingLib.SettingServices
             Detail258.Page = 4;
 
             Detail258.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail258.SubName = PAPERSUB_TYPE.BracketDetail; ;
+            Detail258.SubName = PAPERSUB_TYPE.ColumnGirderBracketDetail; ;
             Detail258.TitleName = "BRACKET DETAIL";
             Detail258.TitleSubName = "(SCALE : 1/8), (SEE TABLE1)";
             Detail258.IsFix = true;
@@ -5648,7 +5655,7 @@ namespace DrawSettingLib.SettingServices
             Detail259.Page = 4;
 
             Detail259.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail259.SubName = PAPERSUB_TYPE.Table2; ;
+            Detail259.SubName = PAPERSUB_TYPE.ColumnGirderTable2; ;
             Detail259.TitleName = "TABLE2";
             Detail259.TitleSubName = "";
             Detail259.IsFix = true;
@@ -5670,7 +5677,7 @@ namespace DrawSettingLib.SettingServices
             Detail260.Page = 4;
 
             Detail260.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail260.SubName = PAPERSUB_TYPE.DetailA;
+            Detail260.SubName = PAPERSUB_TYPE.ColumnGirderDetailA;
             Detail260.TitleName = "DETAIL \"A\"";
             Detail260.TitleSubName = "(TYP.)";
             Detail260.IsFix = false;
@@ -5690,7 +5697,7 @@ namespace DrawSettingLib.SettingServices
             Detail261.Page = 5;
 
             Detail261.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail261.SubName = PAPERSUB_TYPE.Rafter;
+            Detail261.SubName = PAPERSUB_TYPE.ColumnRafter;
             Detail261.TitleName = "1st " + "RAFTER" + " R1~R3"; //Rafter 번호 표기 요함
             Detail261.TitleSubName = "(［200x80x7.35x11)"; //Rafter 정보 수정요함
             Detail261.IsFix = false;
@@ -5715,7 +5722,7 @@ namespace DrawSettingLib.SettingServices
             Detail262.Page = 5;
 
             Detail262.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail262.SubName = PAPERSUB_TYPE.Table3; ;
+            Detail262.SubName = PAPERSUB_TYPE.ColumnRafterTable3; ;
             Detail262.TitleName = "TABLE3";
             Detail262.TitleSubName = "";
             Detail262.IsFix = false;
@@ -5783,7 +5790,7 @@ namespace DrawSettingLib.SettingServices
             Detail265.Page = 6;
 
             Detail265.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail265.SubName = PAPERSUB_TYPE.Rafter;
+            Detail265.SubName = PAPERSUB_TYPE.ColumnRafter;
             Detail265.TitleName = "1st " + "RAFTER" + "R1~R3"; //Rafter 번호 표기 요함
             Detail265.TitleSubName = "(［200x80x7.35x11)"; //Rafter 정보 수정요함
             Detail265.IsFix = false;
@@ -5809,7 +5816,7 @@ namespace DrawSettingLib.SettingServices
             Detail266.Page = 6;
 
             Detail266.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail266.SubName = PAPERSUB_TYPE.RafterSideClipDetail;
+            Detail266.SubName = PAPERSUB_TYPE.ColumnRafterRafterSideClipDetail;
             Detail266.TitleName = "RAFTER SIDE CLIP DETAIL";
             Detail266.TitleSubName = "(SCALE : " + Detail266.ScaleValue + ")";
             Detail266.IsFix = false;
@@ -5834,7 +5841,7 @@ namespace DrawSettingLib.SettingServices
             Detail267.Page = 6;
 
             Detail267.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail267.SubName = PAPERSUB_TYPE.Table4; ;
+            Detail267.SubName = PAPERSUB_TYPE.ColumnRafterTable4; ;
             Detail267.TitleName = "TABLE4";
             Detail267.TitleSubName = "";
             Detail267.IsFix = false;
@@ -5858,7 +5865,7 @@ namespace DrawSettingLib.SettingServices
             Detail270.Page = 7;
 
             Detail270.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail270.SubName = PAPERSUB_TYPE.SectionAA;
+            Detail270.SubName = PAPERSUB_TYPE.ColumnCenterTopViewAA;
             Detail270.TitleName = "VIEW\"A\"-\"A\"";
             Detail270.TitleSubName = "";
             Detail270.IsFix = true;
@@ -5882,13 +5889,15 @@ namespace DrawSettingLib.SettingServices
             Detail271.Page = 7;
 
             Detail271.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail271.SubName = PAPERSUB_TYPE.SectionBB;
+            Detail271.SubName = PAPERSUB_TYPE.ColumnCenterTopSectionBB; 
             Detail271.TitleName = "SECTION \"B\"=\"B\"";
             Detail271.TitleSubName = "";
             Detail271.IsFix = true;
             Detail271.Row = 1;
             Detail271.Column = 2;
             Detail271.ScaleValue = 0; // Auto Scale -> ViewAA 와 동일한 Scale 적용
+            Detail271.otherWidth = 65;
+            Detail271.otherHeight = 65;
 
             Detail271.ReferencePoint.X = 100000;
             Detail271.ReferencePoint.Y = -200000;
@@ -5932,7 +5941,7 @@ namespace DrawSettingLib.SettingServices
             Detail273.Page = 7;
 
             Detail273.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail273.SubName = PAPERSUB_TYPE.DetailG;
+            Detail273.SubName = PAPERSUB_TYPE.ColumnCenterTopDetailG;
             Detail273.TitleName = "DETAIL \"G\"";
             Detail273.TitleSubName = "";
             Detail273.IsFix = true;
@@ -5956,7 +5965,7 @@ namespace DrawSettingLib.SettingServices
             Detail274.Page = 7;
 
             Detail274.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail274.SubName = PAPERSUB_TYPE.SectionCC;
+            Detail274.SubName = PAPERSUB_TYPE.ColumnCenterBaseSectionCC;
             Detail274.TitleName = "SECTION \"C\"-\"C\"";
             Detail274.TitleSubName = "";
             Detail274.IsFix = true;
@@ -5981,7 +5990,7 @@ namespace DrawSettingLib.SettingServices
             Detail275.Page = 7;
 
             Detail275.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail275.SubName = PAPERSUB_TYPE.DrainDetail;
+            Detail275.SubName = PAPERSUB_TYPE.ColumnCenterBaseDrainDetail;
             Detail275.TitleName = "DRAIN DETAIL";
             Detail275.TitleSubName = "(SECTION \"H\")";
             Detail275.IsFix = true;
@@ -6003,7 +6012,7 @@ namespace DrawSettingLib.SettingServices
             Detail276.Page = 7;
 
             Detail276.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail276.SubName = PAPERSUB_TYPE.STRSectionDD;
+            Detail276.SubName = PAPERSUB_TYPE.ColumnCenterBaseSectionDD;
             Detail276.TitleName = "SECTION \"D\"-\"D\"";
             Detail276.TitleSubName = "(SCALE : 1/10)";
             Detail276.IsFix = true;
@@ -6026,7 +6035,7 @@ namespace DrawSettingLib.SettingServices
             Detail277.Page = 7;
 
             Detail277.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail277.SubName = PAPERSUB_TYPE.DetailF;
+            Detail277.SubName = PAPERSUB_TYPE.ColumnCenterBaseDetailF;
             Detail277.TitleName = "DETAIL \"F\"";
             Detail277.TitleSubName = "";
             Detail277.IsFix = true;
@@ -6049,7 +6058,7 @@ namespace DrawSettingLib.SettingServices
             Detail278.Page = 7;
 
             Detail278.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail278.SubName = PAPERSUB_TYPE.DetailE;
+            Detail278.SubName = PAPERSUB_TYPE.ColumnCenterBaseDetailE;
             Detail278.TitleName = "DETAIL \"E\"";
             Detail278.TitleSubName = "";
             Detail278.IsFix = true;
@@ -6074,7 +6083,7 @@ namespace DrawSettingLib.SettingServices
             Detail280.Page = 8;
 
             Detail280.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail280.SubName = PAPERSUB_TYPE.SectionAA;
+            Detail280.SubName = PAPERSUB_TYPE.ColumnSideTopSectionAA;
             Detail280.TitleName = "SECTION\"A\"-\"A\"";
             Detail280.TitleSubName = "";
             Detail280.IsFix = true;
@@ -6123,9 +6132,9 @@ namespace DrawSettingLib.SettingServices
             Detail282.Page = 8;
 
             Detail282.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail282.SubName = PAPERSUB_TYPE.GirderBracketDetail;
-            Detail282.TitleName = "GIRDER BLACKET DETAIL";
-            Detail282.TitleSubName = "(SCALE : 1/8), (SEE TABLE1)";
+            Detail282.SubName = PAPERSUB_TYPE.ColumnSideTopjViewAA;
+            Detail282.TitleName = "VIEW \"A\"-\"A\"";
+            Detail282.TitleSubName = "";
             Detail282.IsFix = true;
             Detail282.Row = 1;
             Detail282.Column = 2;
@@ -6144,7 +6153,7 @@ namespace DrawSettingLib.SettingServices
             Detail283.Page = 8;
 
             Detail283.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail283.SubName = PAPERSUB_TYPE.DrainDetail;
+            Detail283.SubName = PAPERSUB_TYPE.ColumnSideBaseDrainDetail;
             Detail283.TitleName = "DRAIN DETAIL";
             Detail283.TitleSubName = "(SECTION \"H\")";
             Detail283.IsFix = true;
@@ -6166,7 +6175,7 @@ namespace DrawSettingLib.SettingServices
             Detail284.Page = 8;
 
             Detail284.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail284.SubName = PAPERSUB_TYPE.SectionCC;
+            Detail284.SubName = PAPERSUB_TYPE.ColumnSideBaseSectionCC;
             Detail284.TitleName = "SECTION \"C\"-\"C\"";
             Detail284.TitleSubName = "";
             Detail284.IsFix = true;
@@ -6191,7 +6200,7 @@ namespace DrawSettingLib.SettingServices
             Detail285.Page = 8;
 
             Detail285.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail285.SubName = PAPERSUB_TYPE.DetailF;
+            Detail285.SubName = PAPERSUB_TYPE.ColumnSideBaseDetailF;
             Detail285.TitleName = "DETAIL \"F\"";
             Detail285.TitleSubName = "";
             Detail285.IsFix = true;
@@ -6214,7 +6223,7 @@ namespace DrawSettingLib.SettingServices
             Detail286.Page = 8;
 
             Detail286.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail286.SubName = PAPERSUB_TYPE.SectionEE;
+            Detail286.SubName = PAPERSUB_TYPE.ColumnSideBaseSectionDD;
             Detail286.TitleName = "SECTION \"D\"-\"D\"";
             Detail286.TitleSubName = "(SCALE : 1/10)";
             Detail286.IsFix = true;
@@ -6236,7 +6245,7 @@ namespace DrawSettingLib.SettingServices
             Detail287.Page = 8;
 
             Detail287.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail287.SubName = PAPERSUB_TYPE.DetailE;
+            Detail287.SubName = PAPERSUB_TYPE.ColumnSideBaseDetailE;
             Detail287.TitleName = "DETAIL \"E\"";
             Detail287.TitleSubName = "";
             Detail287.IsFix = true;
@@ -6260,7 +6269,7 @@ namespace DrawSettingLib.SettingServices
             Detail290.Page = 9;
 
             Detail290.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail290.SubName = PAPERSUB_TYPE.SectionAA;
+            Detail290.SubName = PAPERSUB_TYPE.ColumnSideTopSectionAA;
             Detail290.TitleName = "SECTION\"A\"-\"A\"";
             Detail290.TitleSubName = "";
             Detail290.IsFix = true;
@@ -6309,9 +6318,9 @@ namespace DrawSettingLib.SettingServices
             Detail292.Page = 9;
 
             Detail292.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail292.SubName = PAPERSUB_TYPE.GirderBracketDetail;
-            Detail292.TitleName = "GIRDER BLACKET DETAIL";
-            Detail292.TitleSubName = "(SCALE : 1/8), (SEE TABLE1)";
+            Detail292.SubName = PAPERSUB_TYPE.ColumnSideTopjViewAA;
+            Detail292.TitleName = "VIEW \"A\"-\"A\"";
+            Detail292.TitleSubName = "";
             Detail292.IsFix = true;
             Detail292.Row = 1;
             Detail292.Column = 2;
@@ -6330,7 +6339,7 @@ namespace DrawSettingLib.SettingServices
             Detail293.Page = 9;
 
             Detail293.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail293.SubName = PAPERSUB_TYPE.DrainDetail;
+            Detail293.SubName = PAPERSUB_TYPE.ColumnSideBaseDrainDetail;
             Detail293.TitleName = "DRAIN DETAIL";
             Detail293.TitleSubName = "(SECTION \"H\")";
             Detail293.IsFix = true;
@@ -6352,7 +6361,7 @@ namespace DrawSettingLib.SettingServices
             Detail294.Page = 9;
 
             Detail294.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail294.SubName = PAPERSUB_TYPE.SectionCC;
+            Detail294.SubName = PAPERSUB_TYPE.ColumnSideBaseSectionCC;
             Detail294.TitleName = "SECTION \"C\"-\"C\"";
             Detail294.TitleSubName = "";
             Detail294.IsFix = true;
@@ -6377,7 +6386,7 @@ namespace DrawSettingLib.SettingServices
             Detail295.Page = 9;
 
             Detail295.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail295.SubName = PAPERSUB_TYPE.DetailF;
+            Detail295.SubName = PAPERSUB_TYPE.ColumnSideBaseDetailF;
             Detail295.TitleName = "DETAIL \"F\"";
             Detail295.TitleSubName = "";
             Detail295.IsFix = true;
@@ -6399,7 +6408,7 @@ namespace DrawSettingLib.SettingServices
             Detail296.Page = 9;
 
             Detail296.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail296.SubName = PAPERSUB_TYPE.SectionEE;
+            Detail296.SubName = PAPERSUB_TYPE.ColumnSideBaseSectionDD;
             Detail296.TitleName = "SECTION \"D\"-\"D\"";
             Detail296.TitleSubName = "(SCALE : 1/10)";
             Detail296.IsFix = true;
@@ -6421,7 +6430,7 @@ namespace DrawSettingLib.SettingServices
             Detail297.Page = 9;
 
             Detail297.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail297.SubName = PAPERSUB_TYPE.DetailE;
+            Detail297.SubName = PAPERSUB_TYPE.ColumnSideBaseDetailE;
             Detail297.TitleName = "DETAIL \"E\"";
             Detail297.TitleSubName = "";
             Detail297.IsFix = true;
@@ -6445,7 +6454,7 @@ namespace DrawSettingLib.SettingServices
             Detail300.Page = 10;
 
             Detail300.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail300.SubName = PAPERSUB_TYPE.SectionAA;
+            Detail300.SubName = PAPERSUB_TYPE.ColumnSideTopSectionAA;
             Detail300.TitleName = "SECTION\"A\"-\"A\"";
             Detail300.TitleSubName = "";
             Detail300.IsFix = true;
@@ -6494,9 +6503,9 @@ namespace DrawSettingLib.SettingServices
             Detail302.Page = 10;
 
             Detail302.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail302.SubName = PAPERSUB_TYPE.GirderBracketDetail;
-            Detail302.TitleName = "GIRDER BLACKET DETAIL";
-            Detail302.TitleSubName = "(SCALE : 1/8), (SEE TABLE1)";
+            Detail302.SubName = PAPERSUB_TYPE.ColumnSideTopjViewAA;
+            Detail302.TitleName = "VIEW \"A\"-\"A\"";
+            Detail302.TitleSubName = "";
             Detail302.IsFix = true;
             Detail302.Row = 1;
             Detail302.Column = 2;
@@ -6515,7 +6524,7 @@ namespace DrawSettingLib.SettingServices
             Detail303.Page = 10;
 
             Detail303.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail303.SubName = PAPERSUB_TYPE.DrainDetail;
+            Detail303.SubName = PAPERSUB_TYPE.ColumnSideBaseDrainDetail;
             Detail303.TitleName = "DRAIN DETAIL";
             Detail303.TitleSubName = "(SECTION \"H\")";
             Detail303.IsFix = true;
@@ -6537,7 +6546,7 @@ namespace DrawSettingLib.SettingServices
             Detail304.Page = 10;
 
             Detail304.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail304.SubName = PAPERSUB_TYPE.SectionCC;
+            Detail304.SubName = PAPERSUB_TYPE.ColumnSideBaseSectionCC;
             Detail304.TitleName = "SECTION \"C\"-\"C\"";
             Detail304.TitleSubName = "";
             Detail304.IsFix = true;
@@ -6562,7 +6571,7 @@ namespace DrawSettingLib.SettingServices
             Detail305.Page = 10;
 
             Detail305.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail305.SubName = PAPERSUB_TYPE.DetailF;
+            Detail305.SubName = PAPERSUB_TYPE.ColumnSideBaseDetailF;
             Detail305.TitleName = "DETAIL \"F\"";
             Detail305.TitleSubName = "";
             Detail305.IsFix = true;
@@ -6584,7 +6593,7 @@ namespace DrawSettingLib.SettingServices
             Detail306.Page = 10;
 
             Detail306.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail306.SubName = PAPERSUB_TYPE.SectionEE;
+            Detail306.SubName = PAPERSUB_TYPE.ColumnSideBaseSectionDD;
             Detail306.TitleName = "SECTION \"D\"-\"D\"";
             Detail306.TitleSubName = "(SCALE : 1/10)";
             Detail306.IsFix = true;
@@ -6606,7 +6615,7 @@ namespace DrawSettingLib.SettingServices
             Detail307.Page = 10;
 
             Detail307.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail307.SubName = PAPERSUB_TYPE.DetailE;
+            Detail307.SubName = PAPERSUB_TYPE.ColumnSideBaseDetailE;
             Detail307.TitleName = "DETAIL \"E\"";
             Detail307.TitleSubName = "";
             Detail307.IsFix = true;
@@ -6688,7 +6697,7 @@ namespace DrawSettingLib.SettingServices
             Detail312.Page = 3;
 
             Detail312.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail312.SubName = PAPERSUB_TYPE.Girder;
+            Detail312.SubName = PAPERSUB_TYPE.ColumnGirder;
             Detail312.TitleName = "GIRDER"; // Girder 번호 적용 필요
             Detail312.TitleSubName = "(H300x300x10x15)"; //Girder 정보 불러와야 함
             Detail312.IsFix = false;
@@ -6715,7 +6724,7 @@ namespace DrawSettingLib.SettingServices
             Detail314.Page = 3;
 
             Detail314.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail314.SubName = PAPERSUB_TYPE.BracketDetail; ;
+            Detail314.SubName = PAPERSUB_TYPE.ColumnGirderBracketDetail; ;
             Detail314.TitleName = "BRACKET DETAIL";
             Detail314.TitleSubName = "(SCALE : 1/8), (SEE TABLE1)";
             Detail314.IsFix = true;
@@ -6737,7 +6746,7 @@ namespace DrawSettingLib.SettingServices
             Detail315.Page = 3;
 
             Detail315.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail315.SubName = PAPERSUB_TYPE.Table1; ;
+            Detail315.SubName = PAPERSUB_TYPE.ColumnGirderTable1; ;
             Detail315.TitleName = "TABLE1";
             Detail315.TitleSubName = "";
             Detail315.IsFix = true;
@@ -6759,7 +6768,7 @@ namespace DrawSettingLib.SettingServices
             Detail316.Page = 3;
 
             Detail316.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail316.SubName = PAPERSUB_TYPE.DetailA;
+            Detail316.SubName = PAPERSUB_TYPE.ColumnGirderDetailA;
             Detail316.TitleName = "DETAIL \"A\"";
             Detail316.TitleSubName = "(TYP.)";
             Detail316.IsFix = false;
@@ -6780,7 +6789,7 @@ namespace DrawSettingLib.SettingServices
             Detail317.Page = 4;
 
             Detail317.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail317.SubName = PAPERSUB_TYPE.Girder;
+            Detail317.SubName = PAPERSUB_TYPE.ColumnGirder;
             Detail317.TitleName = "GIRDER"; // Girder 번호 적용 필요
             Detail317.TitleSubName = "(H300x300x10x15)"; //Girder 정보 불러와야 함
             Detail317.IsFix = false;
@@ -6806,7 +6815,7 @@ namespace DrawSettingLib.SettingServices
             Detail318.Page = 4;
 
             Detail318.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail318.SubName = PAPERSUB_TYPE.BracketDetail; ;
+            Detail318.SubName = PAPERSUB_TYPE.ColumnGirderBracketDetail; ;
             Detail318.TitleName = "BRACKET DETAIL";
             Detail318.TitleSubName = "(SCALE : 1/8), (SEE TABLE1)";
             Detail318.IsFix = true;
@@ -6828,7 +6837,7 @@ namespace DrawSettingLib.SettingServices
             Detail319.Page = 4;
 
             Detail319.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail319.SubName = PAPERSUB_TYPE.Table2; ;
+            Detail319.SubName = PAPERSUB_TYPE.ColumnGirderTable2; ;
             Detail319.TitleName = "TABLE2";
             Detail319.TitleSubName = "";
             Detail319.IsFix = true;
@@ -6850,7 +6859,7 @@ namespace DrawSettingLib.SettingServices
             Detail320.Page = 4;
 
             Detail320.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail320.SubName = PAPERSUB_TYPE.DetailA;
+            Detail320.SubName = PAPERSUB_TYPE.ColumnGirderDetailA;
             Detail320.TitleName = "DETAIL \"A\"";
             Detail320.TitleSubName = "(TYP.)";
             Detail320.IsFix = false;
@@ -6870,7 +6879,7 @@ namespace DrawSettingLib.SettingServices
             Detail321.Page = 5;
 
             Detail321.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail321.SubName = PAPERSUB_TYPE.Rafter;
+            Detail321.SubName = PAPERSUB_TYPE.ColumnRafter;
             Detail321.TitleName = "1st " + "RAFTER" + "R1~R3"; //Rafter 번호 표기 요함
             Detail321.TitleSubName = "(［200x80x7.35x11)"; //Rafter 정보 수정요함
             Detail321.IsFix = false;
@@ -6895,7 +6904,7 @@ namespace DrawSettingLib.SettingServices
             Detail322.Page = 5;
 
             Detail322.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail322.SubName = PAPERSUB_TYPE.Table3; //5Page 마지막에 배치
+            Detail322.SubName = PAPERSUB_TYPE.ColumnRafterTable3; //5Page 마지막에 배치
             Detail322.TitleName = "TABLE3";
             Detail322.TitleSubName = "";
             Detail322.IsFix = false;
@@ -6917,7 +6926,7 @@ namespace DrawSettingLib.SettingServices
             Detail325.Page = 6;
 
             Detail325.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail325.SubName = PAPERSUB_TYPE.Rafter;
+            Detail325.SubName = PAPERSUB_TYPE.ColumnRafter;
             Detail325.TitleName = "1st " + "RAFTER" + "R1~R3"; //Rafter 번호 표기 요함
             Detail325.TitleSubName = "(［200x80x7.35x11)"; //Rafter 정보 수정요함
             Detail325.IsFix = false;
@@ -6943,7 +6952,7 @@ namespace DrawSettingLib.SettingServices
             Detail326.Page = 6;
 
             Detail326.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail326.SubName = PAPERSUB_TYPE.RafterSideClipDetail;
+            Detail326.SubName = PAPERSUB_TYPE.ColumnRafterSideClipDetail;
             Detail326.TitleName = "RAFTER SIDE CLIP DETAIL";
             Detail326.TitleSubName = "(SCALE : " + Detail326.ScaleValue + ")";
             Detail326.IsFix = false;
@@ -6968,7 +6977,7 @@ namespace DrawSettingLib.SettingServices
             Detail327.Page = 6;
 
             Detail327.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail327.SubName = PAPERSUB_TYPE.Table4; ;
+            Detail327.SubName = PAPERSUB_TYPE.ColumnRafterTable4; ;
             Detail327.TitleName = "TABLE4";
             Detail327.TitleSubName = "";
             Detail327.IsFix = false;
@@ -6992,7 +7001,7 @@ namespace DrawSettingLib.SettingServices
             Detail330.Page = 7;
 
             Detail330.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail330.SubName = PAPERSUB_TYPE.SectionAA;
+            Detail330.SubName = PAPERSUB_TYPE.ColumnCenterTopViewAA;
             Detail330.TitleName = "VIEW\"A\"-\"A\"";
             Detail330.TitleSubName = "";
             Detail330.IsFix = true;
@@ -7016,13 +7025,15 @@ namespace DrawSettingLib.SettingServices
             Detail331.Page = 7;
 
             Detail331.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail331.SubName = PAPERSUB_TYPE.SectionBB;
+            Detail331.SubName = PAPERSUB_TYPE.ColumnCenterTopSectionBB;
             Detail331.TitleName = "SECTION \"B\"=\"B\"";
             Detail331.TitleSubName = "";
             Detail331.IsFix = true;
             Detail331.Row = 1;
             Detail331.Column = 2;
             Detail331.ScaleValue = 0; // Auto Scale -> ViewAA 와 동일한 Scale 적용
+            Detail331.otherWidth = 65;
+            Detail331.otherHeight = 65;
 
             Detail331.ReferencePoint.X = 160000;
             Detail331.ReferencePoint.Y = -200000;
@@ -7066,7 +7077,7 @@ namespace DrawSettingLib.SettingServices
             Detail333.Page = 7;
 
             Detail333.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail333.SubName = PAPERSUB_TYPE.DetailG;
+            Detail333.SubName = PAPERSUB_TYPE.ColumnCenterTopDetailG;
             Detail333.TitleName = "DETAIL \"G\"";
             Detail333.TitleSubName = "";
             Detail333.IsFix = true;
@@ -7090,7 +7101,7 @@ namespace DrawSettingLib.SettingServices
             Detail334.Page = 7;
 
             Detail334.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail334.SubName = PAPERSUB_TYPE.SectionCC;
+            Detail334.SubName = PAPERSUB_TYPE.ColumnCenterBaseSectionCC;
             Detail334.TitleName = "SECTION \"C\"-\"C\"";
             Detail334.TitleSubName = "";
             Detail334.IsFix = true;
@@ -7115,7 +7126,7 @@ namespace DrawSettingLib.SettingServices
             Detail335.Page = 7;
 
             Detail335.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail335.SubName = PAPERSUB_TYPE.DrainDetail;
+            Detail335.SubName = PAPERSUB_TYPE.ColumnCenterBaseDrainDetail;
             Detail335.TitleName = "DRAIN DETAIL";
             Detail335.TitleSubName = "(SECTION \"H\")";
             Detail335.IsFix = true;
@@ -7137,7 +7148,7 @@ namespace DrawSettingLib.SettingServices
             Detail336.Page = 7;
 
             Detail336.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail336.SubName = PAPERSUB_TYPE.STRSectionDD;
+            Detail336.SubName = PAPERSUB_TYPE.ColumnCenterBaseSectionDD;
             Detail336.TitleName = "SECTION \"D\"-\"D\"";
             Detail336.TitleSubName = "(SCALE : 1/10)";
             Detail336.IsFix = true;
@@ -7160,7 +7171,7 @@ namespace DrawSettingLib.SettingServices
             Detail337.Page = 7;
 
             Detail337.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail337.SubName = PAPERSUB_TYPE.DetailF;
+            Detail337.SubName = PAPERSUB_TYPE.ColumnCenterBaseDetailF;
             Detail337.TitleName = "DETAIL \"F\"";
             Detail337.TitleSubName = "";
             Detail337.IsFix = true;
@@ -7183,7 +7194,7 @@ namespace DrawSettingLib.SettingServices
             Detail338.Page = 7;
 
             Detail338.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail338.SubName = PAPERSUB_TYPE.DetailE;
+            Detail338.SubName = PAPERSUB_TYPE.ColumnCenterBaseDetailE;
             Detail338.TitleName = "DETAIL \"E\"";
             Detail338.TitleSubName = "";
             Detail338.IsFix = true;
@@ -7208,7 +7219,7 @@ namespace DrawSettingLib.SettingServices
             Detail340.Page = 8;
 
             Detail340.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail340.SubName = PAPERSUB_TYPE.SectionAA;
+            Detail340.SubName = PAPERSUB_TYPE.ColumnSideTopSectionAA;
             Detail340.TitleName = "SECTION\"A\"-\"A\"";
             Detail340.TitleSubName = "";
             Detail340.IsFix = true;
@@ -7257,9 +7268,9 @@ namespace DrawSettingLib.SettingServices
             Detail342.Page = 8;
 
             Detail342.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail342.SubName = PAPERSUB_TYPE.GirderBracketDetail;
-            Detail342.TitleName = "GIRDER BLACKET DETAIL";
-            Detail342.TitleSubName = "(SCALE : 1/8), (SEE TABLE1)";
+            Detail342.SubName = PAPERSUB_TYPE.ColumnSideTopjViewAA;
+            Detail342.TitleName = "VIEW \"A\"-\"A\"";
+            Detail342.TitleSubName = "";
             Detail342.IsFix = true;
             Detail342.Row = 1;
             Detail342.Column = 2;
@@ -7278,7 +7289,7 @@ namespace DrawSettingLib.SettingServices
             Detail343.Page = 8;
 
             Detail343.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail343.SubName = PAPERSUB_TYPE.DrainDetail;
+            Detail343.SubName = PAPERSUB_TYPE.ColumnSideBaseDrainDetail;
             Detail343.TitleName = "DRAIN DETAIL";
             Detail343.TitleSubName = "(SECTION \"H\")";
             Detail343.IsFix = true;
@@ -7300,7 +7311,7 @@ namespace DrawSettingLib.SettingServices
             Detail344.Page = 8;
 
             Detail344.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail344.SubName = PAPERSUB_TYPE.SectionCC;
+            Detail344.SubName = PAPERSUB_TYPE.ColumnSideBaseSectionCC;
             Detail344.TitleName = "SECTION \"C\"-\"C\"";
             Detail344.TitleSubName = "";
             Detail344.IsFix = true;
@@ -7325,7 +7336,7 @@ namespace DrawSettingLib.SettingServices
             Detail345.Page = 8;
 
             Detail345.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail345.SubName = PAPERSUB_TYPE.DetailF;
+            Detail345.SubName = PAPERSUB_TYPE.ColumnSideBaseDetailF;
             Detail345.TitleName = "DETAIL \"F\"";
             Detail345.TitleSubName = "";
             Detail345.IsFix = true;
@@ -7348,7 +7359,7 @@ namespace DrawSettingLib.SettingServices
             Detail346.Page = 8;
 
             Detail346.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail346.SubName = PAPERSUB_TYPE.SectionEE;
+            Detail346.SubName = PAPERSUB_TYPE.ColumnSideBaseSectionDD;
             Detail346.TitleName = "SECTION \"D\"-\"D\"";
             Detail346.TitleSubName = "(SCALE : 1/10)";
             Detail346.IsFix = true;
@@ -7370,7 +7381,7 @@ namespace DrawSettingLib.SettingServices
             Detail347.Page = 8;
 
             Detail347.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail347.SubName = PAPERSUB_TYPE.DetailE;
+            Detail347.SubName = PAPERSUB_TYPE.ColumnSideBaseDetailE;
             Detail347.TitleName = "DETAIL \"E\"";
             Detail347.TitleSubName = "";
             Detail347.IsFix = true;
@@ -7394,7 +7405,7 @@ namespace DrawSettingLib.SettingServices
             Detail350.Page = 9;
 
             Detail350.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail350.SubName = PAPERSUB_TYPE.SectionAA;
+            Detail350.SubName = PAPERSUB_TYPE.ColumnSideTopSectionAA;
             Detail350.TitleName = "SECTION\"A\"-\"A\"";
             Detail350.TitleSubName = "";
             Detail350.IsFix = true;
@@ -7443,9 +7454,9 @@ namespace DrawSettingLib.SettingServices
             Detail352.Page = 9;
 
             Detail352.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail352.SubName = PAPERSUB_TYPE.GirderBracketDetail;
-            Detail352.TitleName = "GIRDER BLACKET DETAIL";
-            Detail352.TitleSubName = "(SCALE : 1/8), (SEE TABLE1)";
+            Detail352.SubName = PAPERSUB_TYPE.ColumnSideTopjViewAA;
+            Detail352.TitleName = "VIEW \"A\"-\"A\"";
+            Detail352.TitleSubName = "";
             Detail352.IsFix = true;
             Detail352.Row = 1;
             Detail352.Column = 2;
@@ -7464,7 +7475,7 @@ namespace DrawSettingLib.SettingServices
             Detail353.Page = 9;
 
             Detail353.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail353.SubName = PAPERSUB_TYPE.DrainDetail;
+            Detail353.SubName = PAPERSUB_TYPE.ColumnSideBaseDrainDetail;
             Detail353.TitleName = "DRAIN DETAIL";
             Detail353.TitleSubName = "(SECTION \"H\")";
             Detail353.IsFix = true;
@@ -7486,7 +7497,7 @@ namespace DrawSettingLib.SettingServices
             Detail354.Page = 9;
 
             Detail354.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail354.SubName = PAPERSUB_TYPE.SectionCC;
+            Detail354.SubName = PAPERSUB_TYPE.ColumnSideBaseSectionCC;
             Detail354.TitleName = "SECTION \"C\"-\"C\"";
             Detail354.TitleSubName = "";
             Detail354.IsFix = true;
@@ -7511,7 +7522,7 @@ namespace DrawSettingLib.SettingServices
             Detail355.Page = 9;
 
             Detail355.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail355.SubName = PAPERSUB_TYPE.DetailF;
+            Detail355.SubName = PAPERSUB_TYPE.ColumnSideBaseDetailF;
             Detail355.TitleName = "DETAIL \"F\"";
             Detail355.TitleSubName = "";
             Detail355.IsFix = true;
@@ -7533,7 +7544,7 @@ namespace DrawSettingLib.SettingServices
             Detail356.Page = 9;
 
             Detail356.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail356.SubName = PAPERSUB_TYPE.SectionEE;
+            Detail356.SubName = PAPERSUB_TYPE.ColumnSideBaseSectionDD;
             Detail356.TitleName = "SECTION \"D\"-\"D\"";
             Detail356.TitleSubName = "(SCALE : 1/10)";
             Detail356.IsFix = true;
@@ -7555,7 +7566,7 @@ namespace DrawSettingLib.SettingServices
             Detail357.Page = 9;
 
             Detail357.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail357.SubName = PAPERSUB_TYPE.DetailE;
+            Detail357.SubName = PAPERSUB_TYPE.ColumnSideBaseDetailE;
             Detail357.TitleName = "DETAIL \"E\"";
             Detail357.TitleSubName = "";
             Detail357.IsFix = true;
@@ -7579,7 +7590,7 @@ namespace DrawSettingLib.SettingServices
             Detail360.Page = 10;
 
             Detail360.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail360.SubName = PAPERSUB_TYPE.SectionAA;
+            Detail360.SubName = PAPERSUB_TYPE.ColumnSideTopSectionAA;
             Detail360.TitleName = "SECTION\"A\"-\"A\"";
             Detail360.TitleSubName = "";
             Detail360.IsFix = true;
@@ -7628,9 +7639,9 @@ namespace DrawSettingLib.SettingServices
             Detail362.Page = 10;
 
             Detail362.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail362.SubName = PAPERSUB_TYPE.GirderBracketDetail;
-            Detail362.TitleName = "GIRDER BLACKET DETAIL";
-            Detail362.TitleSubName = "(SCALE : 1/8), (SEE TABLE1)";
+            Detail362.SubName = PAPERSUB_TYPE.ColumnSideTopjViewAA;
+            Detail362.TitleName = "VIEW \"A\"-\"A\"";
+            Detail362.TitleSubName = "";
             Detail362.IsFix = true;
             Detail362.Row = 1;
             Detail362.Column = 2;
@@ -7649,7 +7660,7 @@ namespace DrawSettingLib.SettingServices
             Detail363.Page = 10;
 
             Detail363.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail363.SubName = PAPERSUB_TYPE.DrainDetail;
+            Detail363.SubName = PAPERSUB_TYPE.ColumnSideBaseDrainDetail;
             Detail363.TitleName = "DRAIN DETAIL";
             Detail363.TitleSubName = "(SECTION \"H\")";
             Detail363.IsFix = true;
@@ -7671,7 +7682,7 @@ namespace DrawSettingLib.SettingServices
             Detail364.Page = 10;
 
             Detail364.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail364.SubName = PAPERSUB_TYPE.SectionCC;
+            Detail364.SubName = PAPERSUB_TYPE.ColumnSideBaseSectionCC;
             Detail364.TitleName = "SECTION \"C\"-\"C\"";
             Detail364.TitleSubName = "";
             Detail364.IsFix = true;
@@ -7696,7 +7707,7 @@ namespace DrawSettingLib.SettingServices
             Detail365.Page = 10;
 
             Detail365.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail365.SubName = PAPERSUB_TYPE.DetailF;
+            Detail365.SubName = PAPERSUB_TYPE.ColumnSideBaseDetailF;
             Detail365.TitleName = "DETAIL \"F\"";
             Detail365.TitleSubName = "";
             Detail365.IsFix = true;
@@ -7718,7 +7729,7 @@ namespace DrawSettingLib.SettingServices
             Detail366.Page = 10;
 
             Detail366.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail366.SubName = PAPERSUB_TYPE.SectionEE;
+            Detail366.SubName = PAPERSUB_TYPE.ColumnSideBaseSectionDD;
             Detail366.TitleName = "SECTION \"D\"-\"D\"";
             Detail366.TitleSubName = "(SCALE : 1/10)";
             Detail366.IsFix = true;
@@ -7740,7 +7751,7 @@ namespace DrawSettingLib.SettingServices
             Detail367.Page = 10;
 
             Detail367.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail367.SubName = PAPERSUB_TYPE.DetailE;
+            Detail367.SubName = PAPERSUB_TYPE.ColumnSideBaseDetailE;
             Detail367.TitleName = "DETAIL \"E\"";
             Detail367.TitleSubName = "";
             Detail367.IsFix = true;
@@ -7764,7 +7775,7 @@ namespace DrawSettingLib.SettingServices
             Detail370.Page = 11;
 
             Detail370.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail370.SubName = PAPERSUB_TYPE.SectionAA;
+            Detail370.SubName = PAPERSUB_TYPE.ColumnSideTopSectionAA;
             Detail370.TitleName = "SECTION\"A\"-\"A\"";
             Detail370.TitleSubName = "";
             Detail370.IsFix = true;
@@ -7813,9 +7824,9 @@ namespace DrawSettingLib.SettingServices
             Detail372.Page = 11;
 
             Detail372.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail372.SubName = PAPERSUB_TYPE.GirderBracketDetail;
-            Detail372.TitleName = "GIRDER BLACKET DETAIL";
-            Detail372.TitleSubName = "(SCALE : 1/8), (SEE TABLE1)";
+            Detail372.SubName = PAPERSUB_TYPE.ColumnSideTopjViewAA;
+            Detail372.TitleName = "VIEW \"A\"-\"A\"";
+            Detail372.TitleSubName = "";
             Detail372.IsFix = true;
             Detail372.Row = 1;
             Detail372.Column = 2;
@@ -7834,7 +7845,7 @@ namespace DrawSettingLib.SettingServices
             Detail373.Page = 11;
 
             Detail373.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail373.SubName = PAPERSUB_TYPE.DrainDetail;
+            Detail373.SubName = PAPERSUB_TYPE.ColumnSideBaseDrainDetail;
             Detail373.TitleName = "DRAIN DETAIL";
             Detail373.TitleSubName = "(SECTION \"H\")";
             Detail373.IsFix = true;
@@ -7856,7 +7867,7 @@ namespace DrawSettingLib.SettingServices
             Detail374.Page = 11;
 
             Detail374.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail374.SubName = PAPERSUB_TYPE.SectionCC;
+            Detail374.SubName = PAPERSUB_TYPE.ColumnSideBaseSectionCC;
             Detail374.TitleName = "SECTION \"C\"-\"C\"";
             Detail374.TitleSubName = "";
             Detail374.IsFix = true;
@@ -7881,7 +7892,7 @@ namespace DrawSettingLib.SettingServices
             Detail375.Page = 11;
 
             Detail375.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail375.SubName = PAPERSUB_TYPE.DetailF;
+            Detail375.SubName = PAPERSUB_TYPE.ColumnSideBaseDetailF;
             Detail375.TitleName = "DETAIL \"F\"";
             Detail375.TitleSubName = "";
             Detail375.IsFix = true;
@@ -7903,7 +7914,7 @@ namespace DrawSettingLib.SettingServices
             Detail376.Page = 11;
 
             Detail376.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail376.SubName = PAPERSUB_TYPE.SectionEE;
+            Detail376.SubName = PAPERSUB_TYPE.ColumnSideBaseSectionDD;
             Detail376.TitleName = "SECTION \"D\"-\"D\"";
             Detail376.TitleSubName = "(SCALE : 1/10)";
             Detail376.IsFix = true;
@@ -7925,7 +7936,7 @@ namespace DrawSettingLib.SettingServices
             Detail377.Page = 11;
 
             Detail377.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail377.SubName = PAPERSUB_TYPE.DetailE;
+            Detail377.SubName = PAPERSUB_TYPE.ColumnSideBaseDetailE;
             Detail377.TitleName = "DETAIL \"E\"";
             Detail377.TitleSubName = "";
             Detail377.IsFix = true;

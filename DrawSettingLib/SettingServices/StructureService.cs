@@ -25,7 +25,8 @@ namespace DrawSettingLib.SettingServices
         }
 
 
-        public StructureCRTColumnModel CreateStructureCRTColumn(List<StructureCRTRafterInputModel> rafterInputList,
+        public StructureCRTColumnModel CreateStructureCRTColumn(
+                                                List<StructureCRTRafterInputModel> rafterInputList,
                                                  List<StructureCRTColumnInputModel> columnInputList,
                                                  List<StructureCRTGirderInputModel> girderInputList,
 
@@ -693,15 +694,18 @@ namespace DrawSettingLib.SettingServices
         }
 
 
-        public StructureCRTCenteringModel CreateStructureCRTCentering(List<StructureCRTRafterInputModel> rafterInputList,
-                                         List<NCenteringInternalModel> centeringInternalInputList,
-                                         List<NRafterCenteringInternalModel> rafterCenteringInternalInputList,
-                                         StructureCRTCenteringInputModel centeringInput,
+        public StructureCRTCenteringModel CreateStructureCRTCentering(
+                                                List<StructureCRTCenteringInputModel> centeringInput,
+                                                List<StructureCRTRafterInputModel> rafterInputList,
+                                                List<NCenteringInternalModel> centeringInternalInputList,
+                                                List<NRafterCenteringInternalModel> rafterCenteringInternalInputList,
+                                                List<NRafterSupportClipCenterSideModel> rafterSupportClipCenterList,
 
                                          AngleSizeModel purlinInput,
+                                                List<object> rafterOutputList,
 
                                          double selTankID, double selTankHeight, double selAnnularInnerWidth, double selRoofOD, double selBottomThk,
-                                         double selRoofSlope, double selBottoSlope,
+                                         double selRoofSlope, double selBottoSlope, double selRoogThk,
                                          double selShellReduce = 0
                                          )
         {
@@ -713,15 +717,17 @@ namespace DrawSettingLib.SettingServices
 
             // Output
             strCRTCenteringData.newCenteringInternalInputList.AddRange(centeringInternalInputList);
-            strCRTCenteringData.newRafterCenteringInternalInputList.AddRange(rafterCenteringInternalInputList);
+            strCRTCenteringData.newRafterCenteringInternalOutputList.AddRange(rafterCenteringInternalInputList);
 
-            //strCRTCenteringData.newCenteringInput = centeringInput;
+            strCRTCenteringData.newCenteringInputList.AddRange(centeringInput);
+            strCRTCenteringData.newCenteringHBeamChannelOutputList.AddRange(rafterOutputList);
 
+            strCRTCenteringData.newRafterSupportClipCenterList.AddRange(rafterSupportClipCenterList);
 
-
+            StructureCRTCenteringInputModel centeringInputOne = strCRTCenteringData.newCenteringInputList[0];
             StructureCRTRafterInputModel rafterInputOne = strCRTCenteringData.newRafterInputList[0];
             NCenteringInternalModel centeringOne = strCRTCenteringData.newCenteringInternalInputList[0];
-            NRafterCenteringInternalModel rafterCenteringOne = strCRTCenteringData.newRafterCenteringInternalInputList[0];
+            NRafterCenteringInternalModel rafterCenteringOne = strCRTCenteringData.newRafterCenteringInternalOutputList[0];
             AngleSizeModel purlinOne = strCRTCenteringData.newPurlinInput;
 
             //기울기, 밑변 길이
@@ -731,17 +737,16 @@ namespace DrawSettingLib.SettingServices
             double AnnularInnerWidth = selAnnularInnerWidth;
             double RoofOD = selRoofOD;
             double BottomThickness = selBottomThk;
+            double roofThickness = selRoogThk;
 
             double RoofSlopeDegree = selRoofSlope;
             double BottomSlopDegree = selBottoSlope;
 
 
             // 고정 값
-            double columnSpace = 25;
             double RafterOffset = 85; //Clip Point로부터 늘어나는 길이
-            double RafterOffsetTopView = geoService.GetAdjacentByHypotenuse(RoofSlopeDegree, RafterOffset);
             double ShellReduce = 70 + selShellReduce; // Shell ID로부터 안쪽으로 줄어드는 길이 -> Angle Type 따라서 달라짐 : k Type에서 조금 안쪽으로 들어감
-            double GirderReduce = 200; //Column Point로부터 줄어드는 길이
+
 
             StructureCRTCenteringModel newStrModel = new StructureCRTCenteringModel();
 
@@ -750,13 +755,13 @@ namespace DrawSettingLib.SettingServices
 
 
             // Centering Model
-            string centeringPosition = centeringInput.Position; // Internal, External
+            string centeringPosition = centeringInputOne.Position; // Internal, External
 
-            double centeringOD = GetDoubleValue(centeringInput.CenteringOD);
-            double flangeOD = GetDoubleValue(centeringInput.FlangeOD);
-            double flangeID = GetDoubleValue(centeringInput.FlangeID);
-            double centeringB = flangeOD - centeringOD / 2;
-            double RoofThickness = 8; // RoofThickness값 불러와야 함
+            double centeringOD = GetDoubleValue(centeringInputOne.CenteringOD);
+            double flangeOD = GetDoubleValue(centeringInputOne.FlangeOD);
+            double flangeID = GetDoubleValue(centeringInputOne.FlangeID);
+            double centeringB = (flangeOD - centeringOD) / 2;
+            double RoofThickness = roofThickness;
 
             double centeringRafterQTY = GetDoubleValue(rafterInputOne.Qty);
             double centeringIntRafterAngle = 360 / centeringRafterQTY;
@@ -764,6 +769,30 @@ namespace DrawSettingLib.SettingServices
             double rafterHeight = GetDoubleValue(rafterCenteringOne.A);
             double rafterHeightTopView = geoService.GetOppositeByHypotenuse(RoofSlopeDegree, rafterHeight);
             double RoofThicknessTopView = geoService.GetOppositeByHypotenuse(RoofSlopeDegree, RoofThickness);
+
+            // Channel Beam Thickness
+            foreach (object eachRfter in rafterOutputList)
+            {
+                if (eachRfter is HBeamModel)
+                {
+                    rafterThickness = GetDoubleValue(((HBeamModel)eachRfter).t1);
+                    rafterHeight = GetDoubleValue(((HBeamModel)eachRfter).A);
+                }
+                else if (eachRfter is ChannelModel)
+                {
+                    rafterThickness = GetDoubleValue(((ChannelModel)eachRfter).t1);
+                    rafterHeight = GetDoubleValue(((ChannelModel)eachRfter).A);
+                }
+            }
+
+
+            double centeringExternalReduce = 30; // A1
+            double centeringInternalReduce = 30; // B1
+            foreach (NRafterCenteringInternalModel eachRafter in strCRTCenteringData.newRafterCenteringInternalOutputList)
+            {
+                centeringExternalReduce = GetDoubleValue(eachRafter.A1);
+                centeringInternalReduce = GetDoubleValue(eachRafter.B1);
+            }
 
             // First Layer
             StructureLayerModel firstLayer = new StructureLayerModel();
@@ -778,13 +807,14 @@ namespace DrawSettingLib.SettingServices
 
                 // Blank : Internal
                 #region CRT CenterRing Internal Type 
-                // Fixed Value
-                double centeringInternalReduce = 30;
+
+
 
                 double PurlinA = GetDoubleValue(purlinOne.A); //Angle 탭 참조      
                 double PurlinB = GetDoubleValue(purlinOne.B); //Angle 탭 참조      
 
-                double CenterRingIntRafterHorozontalLength = TankID - centeringOD / 2 + centeringB - ShellReduce - centeringInternalReduce;
+                //double CenterRingIntRafterHorozontalLength = TankHalfID - centeringOD / 2 + centeringB - ShellReduce - centeringInternalReduce;
+                double CenterRingIntRafterHorozontalLength = TankHalfID - flangeOD / 2 - ShellReduce - centeringInternalReduce; //2021-10-29 수정 완료
                 double CneterRingIntRafterLength = geoService.GetHypotenuseByWidth(RoofSlopeDegree, CenterRingIntRafterHorozontalLength);
 
 
@@ -793,7 +823,7 @@ namespace DrawSettingLib.SettingServices
                 //Purlin의 가장 긴 point 길이를 구하기 위해 purlin의 Horizontal Length값 더해줌
 
                 double tempPurlinLength = geoService.GetStringLengthByArcAngle(PurlinCalLength, centeringIntRafterAngle); //String 길이
-                double RafterAngleThickness = geoService.GetHypotenuseByWidth(centeringIntRafterAngle / 2, rafterThickness); //Rafter 두께가 더해진 값
+                double RafterAngleThickness = geoService.GetHypotenuseByWidth(DegreeToRadian(centeringIntRafterAngle / 2), rafterThickness); //Rafter 두께가 더해진 값
                 double PurlinLength = tempPurlinLength - RafterAngleThickness; //String 길이에서 Rafter의 각도를 반영한 두께를 빼준 값
 
                 double purlinSideAngle = (180 - centeringIntRafterAngle) / 2;
@@ -849,11 +879,11 @@ namespace DrawSettingLib.SettingServices
 
 
                 #region CRT CenterRing External Type
-                // Fixed Value
-                double centeringExternalReduce = 30;
 
                 double roofHorizontalRadius = RoofOD / 2;
                 double centeringHeightSpace = GetDoubleValue(rafterCenteringOne.B1);
+                double Centeringt1 = 10;
+
 
                 double tempCenteringExtRafterLength = roofHorizontalRadius - (centeringOD / 2); //Roof HorizontalLength 값
                 double CenteringExtRafterLength0 = geoService.GetHypotenuseByWidth(RoofSlopeDegree, tempCenteringExtRafterLength); //Roof의 길이
@@ -862,7 +892,7 @@ namespace DrawSettingLib.SettingServices
                                               - centeringHeightSpace; //
                 double RafterAddLength1 = geoService.GetOppositeByHypotenuse(RoofSlopeDegree, tempRafterAddLength1); //CenteringExtRafterLength0 에 더해주면 Rafter의 윗변 길이 나옴
 
-                double RafterAddLength2 = geoService.GetOppositeByAdjacent(RoofSlopeDegree, centeringHeightSpace); //CenteringExtRafterLength0 에 더해주면 Rafter 아랫변 길이 나옴
+                double RafterAddLength2 = geoService.GetOppositeByAdjacent(RoofSlopeDegree, centeringHeightSpace + Centeringt1); //CenteringExtRafterLength0 에 더해주면 Rafter 아랫변 길이 나옴
 
 
                 double CenterRingExtRafterLength1 = CenteringExtRafterLength0 + RafterAddLength1;
@@ -883,10 +913,13 @@ namespace DrawSettingLib.SettingServices
                     newRafter.Size = rafterInputOne.Size;
 
                     newRafter.OuterRealRadius = RoofOD + rafterHeightTopView + RoofThicknessTopView;
-                    newRafter.InnerRealRadius = centeringOD / 2;
-                    newRafter.InnerTopViewRadius = flangeOD / 2;
-                    newRafter.LengthTopView = newRafter.OuterRealRadius - newRafter.InnerTopViewRadius;
 
+                    newRafter.InnerRealRadius = centeringOD / 2;
+                    newRafter.InnerTopViewRadius = flangeOD / 2 + centeringExternalReduce;
+                    newRafter.LengthTopView = newRafter.OuterRealRadius - newRafter.InnerTopViewRadius; ;
+
+                    // 추가함
+                    firstLayer.TopViewRadius = newRafter.OuterRealRadius;
 
                     firstLayer.RafterList.Add(newRafter);
                 }
@@ -900,10 +933,11 @@ namespace DrawSettingLib.SettingServices
 
 
 
-
+            newStrModel.LayerList.Add(firstLayer);
 
             return newStrModel;
         }
+
 
         public List<StructureRafterModel> GetRafterByAngleRange(List<StructureRafterModel> selRafterList, double startAngle, double endAngle)
         {

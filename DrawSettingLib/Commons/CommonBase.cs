@@ -87,50 +87,72 @@ namespace DrawSettingLib.Commons
         RoofCompressionRingCuttingPlan,
 
 
-
-        //Strcuture Int
+        //Structure 공통
         RoofStructureOrientation,
         RoofStructureAssembly,
-        RafterSideClipDetail,
-        CenterRingDetail,
-        RafterCenterClipDetail,
-        PurlinDetail,
-        SectionAA,
-        RibPlateDetail,
+
+        //Strcuture Int
+        CenteringIntRafterSideClipDetail,
+        CenteringIntRafter,
+        CenteringIntCenterRingDetail,
+        CenteringIntRafterCenterClipDetail,
+        CenteringIntPurlinDetail,
+        CenteringIntPurlinSectionAA,
+        CenteringIntRibPlateDetail,
 
         //Structure Ext
-        CenterRingRafterDetail,
-        DetailB,
-        SectionCC,
-        ViewC,
-        RafterAndReinfPadCrossDetail,
+        CenteringExtCenterRingRafterDetail,
+        CenteringExtCenterRingDetail,
+        CenteringExtDetailB,
+        CenteringExtSectionCC,
+        CenteringExtViewC,
+        CenteringExtRafterAndReinfPadCrossDetail,
+
 
         //Structure Column
+        ColumnGirder,
+        ColumnGirderDetailA,
+        ColumnGirderBracketDetail,
+        ColumnGirderTable1,
+        ColumnGirderTable2,
+
+        ColumnRafter,
+        ColumnRafterSideClipDetail,
+        ColumnRafterTable2,
+        ColumnRafterRafterSideClipDetail,
+        ColumnRafterTable3,
+        ColumnRafterTable4,
+
+
+        //Column Center
         CenterColumnDetail,
+
+        ColumnCenterTopViewAA,
+        ColumnCenterTopSectionBB,
+        ColumnCenterTopDetailG,
+        
+        ColumnCenterBaseSectionCC,
+        ColumnCenterBaseDrainDetail,
+        ColumnCenterBaseSectionDD,
+        ColumnCenterBaseDetailF,
+        ColumnCenterBaseDetailE,
+
+
+        //Clumn Side
         C2SideColumnDetail,
         C3SideColumnDetail,
-        DetailG,
-        DrainDetail,
 
-        SectionBB,
-        DetailC,
-        DetailF,
-        DetailE,
-        STRSectionDD,
+        ColumnSideTopSectionAA,
+        ColumnSideTopjViewAA,
+        
+        ColumnSideBaseDrainDetail,
+        ColumnSideBaseSectionCC,
+        ColumnSideBaseDetailF,
+        ColumnSideBaseSectionDD,
+        ColumnSideBaseDetailE,
 
-        SectionEE,
-        DetailD,
-        GirderBracketDetail,
-        Rafter,
 
-        Girder,
-        DetailA,
-        BracketDetail,
 
-        Table1,
-        Table2,
-        Table3,
-        Table4,
 
 
 
