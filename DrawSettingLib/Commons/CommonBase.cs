@@ -130,7 +130,7 @@ namespace DrawSettingLib.Commons
         ColumnCenterTopViewAA,
         ColumnCenterTopSectionBB,
         ColumnCenterTopDetailG,
-        
+
         ColumnCenterBaseSectionCC,
         ColumnCenterBaseDrainDetail,
         ColumnCenterBaseSectionDD,
@@ -143,8 +143,8 @@ namespace DrawSettingLib.Commons
         C3SideColumnDetail,
 
         ColumnSideTopSectionAA,
-        ColumnSideTopjViewAA,
-        
+        ColumnSideTopViewAA,
+
         ColumnSideBaseDrainDetail,
         ColumnSideBaseSectionCC,
         ColumnSideBaseDetailF,
@@ -158,6 +158,8 @@ namespace DrawSettingLib.Commons
 
 
     }
+
+
 
 
 }

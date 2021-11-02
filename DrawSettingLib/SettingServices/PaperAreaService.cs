@@ -3759,7 +3759,7 @@ namespace DrawSettingLib.SettingServices
             Detail171.Page = 3;
 
             Detail171.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail171.SubName = PAPERSUB_TYPE.ColumnCenterTopSectionBB; 
+            Detail171.SubName = PAPERSUB_TYPE.ColumnCenterTopSectionBB;
             Detail171.TitleName = "SECTION \"B\"=\"B\"";
             Detail171.TitleSubName = "";
             Detail171.IsFix = true;
@@ -4020,7 +4020,8 @@ namespace DrawSettingLib.SettingServices
             Detail182.ColumnSpan = 3;
             Detail182.ScaleValue = 0;//Auto Scali
 
-
+            Detail182.otherHeight = 400;
+            Detail182.otherHeight = 18;
 
             Detail182.ReferencePoint.X = 10000;
             Detail182.ReferencePoint.Y = -200000;
@@ -4235,7 +4236,7 @@ namespace DrawSettingLib.SettingServices
             Detail191.Page = 3;
 
             Detail191.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail191.SubName = PAPERSUB_TYPE.ColumnCenterTopSectionBB; 
+            Detail191.SubName = PAPERSUB_TYPE.ColumnCenterTopSectionBB;
             Detail191.TitleName = "SECTION \"B\"=\"B\"";
             Detail191.TitleSubName = "";
             Detail191.IsFix = true;
@@ -4481,13 +4482,15 @@ namespace DrawSettingLib.SettingServices
             Detail202.Page = 4;
 
             Detail202.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail202.SubName = PAPERSUB_TYPE.ColumnSideTopjViewAA;
+            Detail202.SubName = PAPERSUB_TYPE.ColumnSideTopViewAA;
             Detail202.TitleName = "VIEW \"A\"-\"A\"";
             Detail202.TitleSubName = "";
             Detail202.IsFix = true;
             Detail202.Row = 1;
             Detail202.Column = 2;
             Detail202.ScaleValue = 0; // Auto Scale -> SectionAA와 동일한 Scale
+            Detail202.otherWidth = 65; // Column OD를 65에 맞추고 Girder Area 10그림 
+            Detail202.otherHeight = 65;
 
             Detail202.ReferencePoint.X = 200000;
             Detail202.ReferencePoint.Y = -200000;
@@ -4686,8 +4689,8 @@ namespace DrawSettingLib.SettingServices
             Detail212.ScaleValue = 0;//Auto Scali
             Detail212.IsRepeat = true;
 
-            Detail212.otherWidth = 400; //수정요함
-            Detail212.otherHeight = 120; // 수정요함
+            Detail212.otherWidth = 400;
+            Detail212.otherHeight = 18;
 
 
 
@@ -4804,7 +4807,7 @@ namespace DrawSettingLib.SettingServices
             Detail217.RowSpan = 2;
             Detail217.ColumnSpan = 2;
             Detail217.ScaleValue = 0;//Auto Scali
-            Detail217.otherWidth = 75; //수정요함
+            Detail217.otherWidth = 75; 
             Detail217.otherHeight = 90; // 수정요함
             Detail217.TitleSubName = "(SCALE : " + Detail217.ScaleValue + ")";// Scale 값 받기 위해 한번 더 기록
 
@@ -4879,7 +4882,6 @@ namespace DrawSettingLib.SettingServices
             Detail221.ScaleValue = 0; // Auto Scale -> ViewAA 와 동일한 Scale 적용
             Detail221.otherWidth = 65;
             Detail221.otherHeight = 65;
-
             Detail221.ReferencePoint.X = 100000;
             Detail221.ReferencePoint.Y = -200000;
             Detail221.ModelCenterLocation.X = Detail221.ReferencePoint.X;
@@ -5113,13 +5115,15 @@ namespace DrawSettingLib.SettingServices
             Detail232.Page = 6;
 
             Detail232.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail232.SubName = PAPERSUB_TYPE.ColumnSideTopjViewAA;
+            Detail232.SubName = PAPERSUB_TYPE.ColumnSideTopViewAA;
             Detail232.TitleName = "VIEW \"A\"-\"A\"";
             Detail232.TitleSubName = "";
             Detail232.IsFix = true;
             Detail232.Row = 1;
             Detail232.Column = 2;
             Detail232.ScaleValue = 0; // Auto Scale -> SectionAA와 동일한 Scale
+            Detail232.otherWidth = 65; // Column OD를 65에 맞추고 Girder Area 10그림 
+            Detail232.otherHeight = 65;
 
             Detail232.ReferencePoint.X = 200000;
             Detail232.ReferencePoint.Y = -200000;
@@ -5299,13 +5303,15 @@ namespace DrawSettingLib.SettingServices
             Detail242.Page = 7;
 
             Detail242.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail242.SubName = PAPERSUB_TYPE.ColumnSideTopjViewAA;
+            Detail242.SubName = PAPERSUB_TYPE.ColumnSideTopViewAA;
             Detail242.TitleName = "VIEW \"A\"-\"A\"";
             Detail242.TitleSubName = "";
             Detail242.IsFix = true;
             Detail242.Row = 1;
             Detail242.Column = 2;
             Detail242.ScaleValue = 0; // Auto Scale -> SectionAA와 동일한 Scale
+            Detail242.otherWidth = 65; // Column OD를 65에 맞추고 Girder Area 10그림 
+            Detail242.otherHeight = 65;
 
             Detail242.ReferencePoint.X = 200000;
             Detail242.ReferencePoint.Y = -200000;
@@ -5498,8 +5504,8 @@ namespace DrawSettingLib.SettingServices
             Detail252.ScaleValue = 0;//Auto Scali
             Detail252.IsRepeat = true;
 
-            Detail252.otherWidth = 400; //수정요함
-            Detail252.otherHeight = 120; // 수정요함
+            Detail252.otherWidth = 400;
+            Detail252.otherHeight = 18;
 
             Detail252.ReferencePoint.X = 10000;
             Detail252.ReferencePoint.Y = -100000;
@@ -5616,8 +5622,8 @@ namespace DrawSettingLib.SettingServices
             Detail257.ScaleValue = 0;//Auto Scali
             Detail257.IsRepeat = true;
 
-            Detail257.otherWidth = 400; //수정요함
-            Detail257.otherHeight = 120; // 수정요함
+            Detail257.otherWidth = 400;
+            Detail257.otherHeight = 18; 
 
             Detail257.ReferencePoint.X = 60000;
             Detail257.ReferencePoint.Y = -100000;
@@ -5823,8 +5829,8 @@ namespace DrawSettingLib.SettingServices
             Detail266.RowSpan = 2;
             Detail266.ColumnSpan = 2;
             Detail266.ScaleValue = 0;//Auto Scali
-            Detail266.otherWidth = 75; //수정요함
-            Detail266.otherHeight = 90; // 수정요함
+            Detail266.otherWidth = 75; 
+            Detail266.otherHeight = 90;
             Detail266.TitleSubName = "(SCALE : " + Detail266.ScaleValue + ")";// Scale 값 받기 위해 한번 더 기록
 
             Detail266.ReferencePoint.X = 130000;
@@ -5889,7 +5895,7 @@ namespace DrawSettingLib.SettingServices
             Detail271.Page = 7;
 
             Detail271.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail271.SubName = PAPERSUB_TYPE.ColumnCenterTopSectionBB; 
+            Detail271.SubName = PAPERSUB_TYPE.ColumnCenterTopSectionBB;
             Detail271.TitleName = "SECTION \"B\"=\"B\"";
             Detail271.TitleSubName = "";
             Detail271.IsFix = true;
@@ -5898,7 +5904,6 @@ namespace DrawSettingLib.SettingServices
             Detail271.ScaleValue = 0; // Auto Scale -> ViewAA 와 동일한 Scale 적용
             Detail271.otherWidth = 65;
             Detail271.otherHeight = 65;
-
             Detail271.ReferencePoint.X = 100000;
             Detail271.ReferencePoint.Y = -200000;
             Detail271.ModelCenterLocation.X = Detail271.ReferencePoint.X;
@@ -6132,13 +6137,15 @@ namespace DrawSettingLib.SettingServices
             Detail282.Page = 8;
 
             Detail282.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail282.SubName = PAPERSUB_TYPE.ColumnSideTopjViewAA;
+            Detail282.SubName = PAPERSUB_TYPE.ColumnSideTopViewAA;
             Detail282.TitleName = "VIEW \"A\"-\"A\"";
             Detail282.TitleSubName = "";
             Detail282.IsFix = true;
             Detail282.Row = 1;
             Detail282.Column = 2;
             Detail282.ScaleValue = 0; // Auto Scale -> SectionAA와 동일한 Scale
+            Detail282.otherWidth = 65; // Column OD를 65에 맞추고 Girder Area 10그림 
+            Detail282.otherHeight = 65;
 
             Detail282.ReferencePoint.X = 200000;
             Detail282.ReferencePoint.Y = -200000;
@@ -6318,13 +6325,15 @@ namespace DrawSettingLib.SettingServices
             Detail292.Page = 9;
 
             Detail292.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail292.SubName = PAPERSUB_TYPE.ColumnSideTopjViewAA;
+            Detail292.SubName = PAPERSUB_TYPE.ColumnSideTopViewAA;
             Detail292.TitleName = "VIEW \"A\"-\"A\"";
             Detail292.TitleSubName = "";
             Detail292.IsFix = true;
             Detail292.Row = 1;
             Detail292.Column = 2;
             Detail292.ScaleValue = 0; // Auto Scale -> SectionAA와 동일한 Scale
+            Detail292.otherWidth = 65; // Column OD를 65에 맞추고 Girder Area 10그림 
+            Detail292.otherHeight = 65;
 
             Detail292.ReferencePoint.X = 200000;
             Detail292.ReferencePoint.Y = -200000;
@@ -6503,13 +6512,15 @@ namespace DrawSettingLib.SettingServices
             Detail302.Page = 10;
 
             Detail302.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail302.SubName = PAPERSUB_TYPE.ColumnSideTopjViewAA;
+            Detail302.SubName = PAPERSUB_TYPE.ColumnSideTopViewAA;
             Detail302.TitleName = "VIEW \"A\"-\"A\"";
             Detail302.TitleSubName = "";
             Detail302.IsFix = true;
             Detail302.Row = 1;
             Detail302.Column = 2;
             Detail302.ScaleValue = 0; // Auto Scale -> SectionAA와 동일한 Scale
+            Detail302.otherWidth = 65; // Column OD를 65에 맞추고 Girder Area 10그림 
+            Detail302.otherHeight = 65;
 
             Detail302.ReferencePoint.X = 200000;
             Detail302.ReferencePoint.Y = -200000;
@@ -6706,8 +6717,8 @@ namespace DrawSettingLib.SettingServices
             Detail312.ScaleValue = 0;//Auto Scali
             Detail312.IsRepeat = true;
 
-            Detail312.otherWidth = 400; //수정요함
-            Detail312.otherHeight = 120; // 수정요함
+            Detail312.otherWidth = 400; 
+            Detail312.otherHeight = 18; 
 
             Detail312.ReferencePoint.X = 10000;
             Detail312.ReferencePoint.Y = -100000;
@@ -6798,8 +6809,8 @@ namespace DrawSettingLib.SettingServices
             Detail317.ScaleValue = 0;//Auto Scali
             Detail317.IsRepeat = true;
 
-            Detail317.otherWidth = 400; //수정요함
-            Detail317.otherHeight = 120; // 수정요함
+            Detail317.otherWidth = 400;
+            Detail317.otherHeight = 18;
 
             Detail317.ReferencePoint.X = 60000;
             Detail317.ReferencePoint.Y = -100000;
@@ -6959,8 +6970,8 @@ namespace DrawSettingLib.SettingServices
             Detail326.RowSpan = 2;
             Detail326.ColumnSpan = 2;
             Detail326.ScaleValue = 0;//Auto Scali
-            Detail326.otherWidth = 75; //수정요함
-            Detail326.otherHeight = 90; // 수정요함
+            Detail326.otherWidth = 75;
+            Detail326.otherHeight = 90;
             Detail326.TitleSubName = "(SCALE : " + Detail326.ScaleValue + ")";// Scale 값 받기 위해 한번 더 기록
 
             Detail326.ReferencePoint.X = 130000;
@@ -7268,13 +7279,15 @@ namespace DrawSettingLib.SettingServices
             Detail342.Page = 8;
 
             Detail342.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail342.SubName = PAPERSUB_TYPE.ColumnSideTopjViewAA;
+            Detail342.SubName = PAPERSUB_TYPE.ColumnSideTopViewAA;
             Detail342.TitleName = "VIEW \"A\"-\"A\"";
             Detail342.TitleSubName = "";
             Detail342.IsFix = true;
             Detail342.Row = 1;
             Detail342.Column = 2;
             Detail342.ScaleValue = 0; // Auto Scale -> SectionAA와 동일한 Scale
+            Detail342.otherWidth = 65; // Column OD를 65에 맞추고 Girder Area 10그림 
+            Detail342.otherHeight = 65;
 
             Detail342.ReferencePoint.X = 260000;
             Detail342.ReferencePoint.Y = -200000;
@@ -7454,13 +7467,15 @@ namespace DrawSettingLib.SettingServices
             Detail352.Page = 9;
 
             Detail352.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail352.SubName = PAPERSUB_TYPE.ColumnSideTopjViewAA;
+            Detail352.SubName = PAPERSUB_TYPE.ColumnSideTopViewAA;
             Detail352.TitleName = "VIEW \"A\"-\"A\"";
             Detail352.TitleSubName = "";
             Detail352.IsFix = true;
             Detail352.Row = 1;
             Detail352.Column = 2;
             Detail352.ScaleValue = 0; // Auto Scale -> SectionAA와 동일한 Scale
+            Detail352.otherWidth = 65; // Column OD를 65에 맞추고 Girder Area 10그림 
+            Detail352.otherHeight = 65;
 
             Detail352.ReferencePoint.X = 340000;
             Detail352.ReferencePoint.Y = -200000;
@@ -7639,13 +7654,15 @@ namespace DrawSettingLib.SettingServices
             Detail362.Page = 10;
 
             Detail362.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail362.SubName = PAPERSUB_TYPE.ColumnSideTopjViewAA;
+            Detail362.SubName = PAPERSUB_TYPE.ColumnSideTopViewAA;
             Detail362.TitleName = "VIEW \"A\"-\"A\"";
             Detail362.TitleSubName = "";
             Detail362.IsFix = true;
             Detail362.Row = 1;
             Detail362.Column = 2;
             Detail362.ScaleValue = 0; // Auto Scale -> SectionAA와 동일한 Scale
+            Detail362.otherWidth = 65; // Column OD를 65에 맞추고 Girder Area 10그림 
+            Detail362.otherHeight = 65;
 
             Detail362.ReferencePoint.X = 420000;
             Detail362.ReferencePoint.Y = -200000;
@@ -7824,13 +7841,15 @@ namespace DrawSettingLib.SettingServices
             Detail372.Page = 11;
 
             Detail372.Name = PAPERMAIN_TYPE.DETAIL;
-            Detail372.SubName = PAPERSUB_TYPE.ColumnSideTopjViewAA;
+            Detail372.SubName = PAPERSUB_TYPE.ColumnSideTopViewAA;
             Detail372.TitleName = "VIEW \"A\"-\"A\"";
             Detail372.TitleSubName = "";
             Detail372.IsFix = true;
             Detail372.Row = 1;
             Detail372.Column = 2;
             Detail372.ScaleValue = 0; // Auto Scale -> SectionAA와 동일한 Scale
+            Detail372.otherWidth = 65; // Column OD를 65에 맞추고 Girder Area 10그림 
+            Detail372.otherHeight = 65;
 
             Detail372.ReferencePoint.X = 500000;
             Detail372.ReferencePoint.Y = -200000;
