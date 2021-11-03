@@ -764,6 +764,8 @@ namespace DrawSettingLib.SettingServices
             double flangeID = GetDoubleValue(centeringInputOne.FlangeID);
             double centeringB = (flangeOD - centeringOD) / 2;
             double RoofThickness = roofThickness;
+            double centeringT1 = GetDoubleValue(centeringInputOne.Thickness1);
+
 
             double centeringRafterQTY = GetDoubleValue(rafterInputOne.Qty);
             double centeringIntRafterAngle = 360 / centeringRafterQTY;
@@ -771,6 +773,10 @@ namespace DrawSettingLib.SettingServices
             double rafterHeight = GetDoubleValue(rafterCenteringOne.A);
             double rafterHeightTopView = geoService.GetOppositeByHypotenuse(RoofSlopeDegree, rafterHeight);
             double RoofThicknessTopView = geoService.GetOppositeByHypotenuse(RoofSlopeDegree, RoofThickness);
+            double RoofThicknessAddLength = geoService.GetOppositeByAdjacent(RoofSlopeDegree, RoofThickness);
+
+
+            double centeringA = GetDoubleValue(centeringOne.A);// Centering Height
 
             // Channel Beam Thickness
             foreach (object eachRfter in rafterOutputList)
@@ -884,32 +890,31 @@ namespace DrawSettingLib.SettingServices
 
                 double roofHorizontalRadius = RoofOD / 2;
                 double centeringHeightSpace = GetDoubleValue(rafterCenteringOne.B1);
-                double Centeringt1 = 10; // Centering t1
-                double CenteringA = 300; // 값 불러와야 함
+                double Centeringt1 = centeringT1; // Centering t1
+                double CenteringA = centeringA; // 값 불러와야 함
+
+                double RafterSlopeHeight = geoService.GetHypotenuseByWidth(RoofSlopeDegree, rafterHeight);
 
 
                 double tempCenteringExtRafterLength = roofHorizontalRadius - (centeringOD / 2); //Roof HorizontalLength 값
                 double CenteringExtRafterLength0 = geoService.GetHypotenuseByWidth(RoofSlopeDegree, tempCenteringExtRafterLength); //Roof의 길이
+
+
                 //double tempRafterAddLength1 = geoService.GetHypotenuseByWidth(RoofSlopeDegree, rafterHeight)
-                //                              - geoService.GetOppositeByAdjacent(RoofSlopeDegree, centeringB + centeringExternalReduce)
-                //                              - centeringHeightSpace; //
+                double RafterCenterTopPointLength = CenteringA - Centeringt1 - centeringHeightSpace;
+                if (RafterSlopeHeight <= RafterCenterTopPointLength)
+                {
+                    RafterCenterTopPointLength = RafterSlopeHeight;
+                }
 
-                double tempRafterAddLength1 = CenteringA - Centeringt1 - centeringHeightSpace;
 
-
-
-                double RafterAddLength1 = geoService.GetOppositeByHypotenuse(RoofSlopeDegree, tempRafterAddLength1); //CenteringExtRafterLength0 에 더해주면 Rafter의 윗변 길이 나옴
-
+                double RafterAddLength1 = geoService.GetOppositeByHypotenuse(RoofSlopeDegree, RafterCenterTopPointLength); //CenteringExtRafterLength0 에 더해주면 Rafter의 윗변 길이 나옴
                 double RafterAddLength2 = geoService.GetOppositeByAdjacent(RoofSlopeDegree, centeringHeightSpace + Centeringt1); //CenteringExtRafterLength0 에 더해주면 Rafter 아랫변 길이 나옴
-
-
-                double CenterRingExtRafterLength1 = CenteringExtRafterLength0 + RafterAddLength1;
-                double CenterRingExtRafterLength2 = CenteringExtRafterLength0 + RafterAddLength2;
+                double CenterRingExtRafterLength1 = CenteringExtRafterLength0 + RafterAddLength1 + RoofThicknessAddLength;
+                double CenterRingExtRafterLength2 = CenteringExtRafterLength0 + RafterAddLength2 + RoofThicknessAddLength;
 
                 //double UnderCutHeight = geoService.GetHypotenuseByWidth(RoofSlopeDegree, centeringHeightSpace + Centeringt1);
                 //double CenteringBetweenRafterHeight = tempRafterAddLength1-UnderCutHeight;
-
-
 
                 for (int rafterIndex = 0; rafterIndex < centeringRafterQTY; rafterIndex++)
                 {
@@ -919,19 +924,31 @@ namespace DrawSettingLib.SettingServices
                     newRafter.Length = CenterRingExtRafterLength1;
                     newRafter.Height = rafterHeight;
 
+
+
                     newRafter.Size = rafterInputOne.Size;
 
+
+
                     newRafter.OuterRealRadius = (RoofOD / 2) + rafterHeightTopView + RoofThicknessTopView;
+
+
 
                     newRafter.InnerRealRadius = centeringOD / 2;
                     newRafter.InnerTopViewRadius = flangeOD / 2 + centeringExternalReduce;
                     newRafter.LengthTopView = newRafter.OuterRealRadius - newRafter.InnerTopViewRadius; ;
 
+
+
                     // 추가함
                     firstLayer.TopViewRadius = newRafter.OuterRealRadius;
 
+
+
                     firstLayer.RafterList.Add(newRafter);
                 }
+
+
 
 
 
